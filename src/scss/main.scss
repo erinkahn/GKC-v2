@@ -196,22 +196,13 @@ body {
 		h2{
 			font-size: 1.7em;
 		}
-		a{
-			text-decoration: none;
-			color: #606060;
-			
-			&:hover{
-				color: #6aab35;
-				cursor: pointer;
-			}
-		}
 
 		div{
 			padding-bottom: 13px;
 			img{
 				
 				display: flex;
-				max-width: 270px;
+				max-width: 340px;
 				width: 100%;
 				margin: 0 auto;
 				
@@ -222,6 +213,19 @@ body {
 				max-width: 342px;
 				width: 100%;
 				margin: 14px auto;
+				padding-bottom: 20px;
+			}
+		}
+
+		a{
+			text-decoration: none;
+			color: #606060;
+			bottom: 20px;
+			position: relative;
+			
+			&:hover{
+				color: #6aab35;
+				cursor: pointer;
 			}
 		}
 	}
