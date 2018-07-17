@@ -466,9 +466,9 @@ body {
 
 
 .mission-vision-purpose{
-	margin: 0 auto;
+	margin: 19% auto;
 	line-height: 1.6em;
-	margin-bottom: 10%;
+	padding-bottom: 39%;
 
 	@media screen and (max-width: 899px){
 		width: 90%;
@@ -476,6 +476,7 @@ body {
 	}
 	@media screen and (min-width: 900px){
 		width: 93%;
+		border: none;
 	}
 	@media screen and (min-width: 1024px){
 		width: 83%;
@@ -485,14 +486,17 @@ body {
 	}
 
 	.mission, .vision, .purpose{
-		margin-bottom: 24%;
+
 		div{
 			padding: 33% 0;
+			position: relative;
+			margin: 32% 0;
 
 			h2{
 				margin-top: 46px;
 				position: absolute;
 				padding-top: 36px;
+				left: 20px;
 			}
 			
 			p{
@@ -503,28 +507,46 @@ body {
 	}
 
 	.mission{
-		border-top: 4px solid #f29734;
-		border-left: 4px solid #f29734;
 		background-image: url('../img/mission.png');
 		background-repeat: no-repeat;
 		height: 0;
 		background-size: 100% auto;
 		background-position: cover;
 		width: 100%;
-		padding-bottom: 46%;
-		margin-bottom: 86%;
+		padding-bottom: 102%;
+		@media screen and (min-width: 460px){
+			padding-bottom: 80%;
+		}
+		@media screen and (min-width: 547px){
+			padding-bottom: 48%;
+		}
+		@media screen and (min-width: 900px){
+			width: 70%;
+			padding-bottom: 200px;
+		}
+		@media screen and (min-width: 1024px){
+
+		}
+		@media screen and (min-width: 1224px){
+
+		}
 
 		div{
-			position: relative;
 			padding: 60px 0;
 			margin: 10% 0;
+			padding: 89px 0;
+
+			@media screen and (min-width: 900px){
+				margin: 24% 0;
+			}
 
 			h2{
 				color: #f29734;
-				left: 20px;
 			}
 	
 			p{
+				border-bottom: 4px solid #f29734;
+				border-right: 4px solid #f29734;
 				margin-top: 60px;
 			}
 		}
@@ -532,24 +554,39 @@ body {
 	}
 
 	.vision{
-		border-top: 4px solid #b71117;
-		border-right: 4px solid #b71117;
 		background-image: url('../img/vision.png');
 		background-repeat: no-repeat;
 		height: 0;
 		background-size: 100% auto;
 		background-position: cover;
 		width: 100%;
-		padding-bottom: 50%;
-		margin-bottom: 56%;
+		padding-bottom: 78%;
+		@media screen and (min-width: 460px){
+			padding-bottom: 70%;
+		}
+		@media screen and (min-width: 547px){
+			padding-bottom: 54%;
+		}
+		@media screen and (min-width: 900px){
+			width: 70%;
+		}
+		@media screen and (min-width: 1024px){
+
+		}
+		@media screen and (min-width: 1224px){
+
+		}
 
 		div{
+
 			h2{
 				color: #b71117;
-				left: 46px;
+				left: 23px;
 			}
 	
 			p{
+				border-bottom: 4px solid #b71117;
+				border-left: 4px solid #b71117;
 				margin-top: 60px;
 			}
 		}
@@ -557,25 +594,35 @@ body {
 	}
 
 	.purpose{
-		border-top: 4px solid #8560a8;
-		border-left: 4px solid #8560a8;
 		background-image: url('../img/purpose.png');
 		background-repeat: no-repeat;
 		height: 0;
 		background-size: 100% auto;
 		background-position: cover;
 		width: 100%;
-		padding-bottom: 44%;
-		margin-bottom: 56%;
+		padding-bottom: 47%;
+
+		@media screen and (min-width: 900px){
+			width: 70%;
+		}
+		@media screen and (min-width: 1024px){
+
+		}
+		@media screen and (min-width: 1224px){
+
+		}
 
 		div{
+
 			h2{
 				color: #8560a8;
-				left: 46px;
 				margin-top: 30px;
+				left: 23px;
 			}
 
 			p{
+				border-bottom: 4px solid #8560a8;
+				border-left: 4px solid #8560a8;
 				margin-top: 40px;
 			}
 		}
