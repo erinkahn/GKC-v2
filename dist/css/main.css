@@ -591,6 +591,7 @@ body {
 	.mission-vision-purpose {
 		width: 93%;
 		border: none;
+		margin: 9% auto;
 	}
 }
 
@@ -612,11 +613,23 @@ body {
 	margin: 32% 0;
 }
 
+@media screen and (min-width: 1224px) {
+	.mission-vision-purpose .mission div, .mission-vision-purpose .vision div, .mission-vision-purpose .purpose div {
+		margin: 27% 0;
+	}
+}
+
 .mission-vision-purpose .mission div h2, .mission-vision-purpose .vision div h2, .mission-vision-purpose .purpose div h2 {
 	margin-top: 46px;
 	position: absolute;
 	padding-top: 36px;
 	left: 20px;
+}
+
+@media screen and (min-width: 900px) {
+	.mission-vision-purpose .mission div h2, .mission-vision-purpose .vision div h2, .mission-vision-purpose .purpose div h2 {
+		left: 30px;
+	}
 }
 
 .mission-vision-purpose .mission div p, .mission-vision-purpose .vision div p, .mission-vision-purpose .purpose div p {
@@ -649,29 +662,37 @@ body {
 @media screen and (min-width: 900px) {
 	.mission-vision-purpose .mission {
 		width: 70%;
-		padding-bottom: 200px;
+		padding-bottom: 34%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.mission-vision-purpose .mission {
+		padding-bottom: 39%;
 	}
 }
 
 .mission-vision-purpose .mission div {
-	padding: 60px 0;
-	margin: 10% 0;
 	padding: 89px 0;
 }
 
 @media screen and (min-width: 900px) {
 	.mission-vision-purpose .mission div {
-		margin: 24% 0;
+		padding: 10px;
+		margin-top: 150px;
+		width: 70%;
+		margin-left: 194px;
+		position: absolute;
 	}
 }
 
 .mission-vision-purpose .mission div h2 {
-	color: #f29734;
+	color: #6aab35;
 }
 
 .mission-vision-purpose .mission div p {
-	border-bottom: 4px solid #f29734;
-	border-right: 4px solid #f29734;
+	border-bottom: 4px solid #6aab35;
+	border-right: 4px solid #6aab35;
 	margin-top: 60px;
 }
 
@@ -685,32 +706,47 @@ body {
 	padding-bottom: 78%;
 }
 
-@media screen and (min-width: 460px) {
-	.mission-vision-purpose .vision {
-		padding-bottom: 70%;
-	}
-}
-
 @media screen and (min-width: 547px) {
 	.mission-vision-purpose .vision {
-		padding-bottom: 54%;
+		padding-bottom: 84%;
 	}
 }
 
 @media screen and (min-width: 900px) {
 	.mission-vision-purpose .vision {
-		width: 70%;
+		width: 80%;
+		padding-bottom: 59%;
+		right: 0;
+		margin-left: 157px;
+		margin-top: 200px;
+	}
+}
+
+@media screen and (min-width: 547px) {
+	.mission-vision-purpose .vision div {
+		margin: 192px 0;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.mission-vision-purpose .vision div {
+		padding: 10px;
+		margin-top: 120px;
+		width: 60%;
+		left: 38px;
+		position: absolute;
+		padding: 89px 0;
 	}
 }
 
 .mission-vision-purpose .vision div h2 {
-	color: #b71117;
+	color: #00bff3;
 	left: 23px;
 }
 
 .mission-vision-purpose .vision div p {
-	border-bottom: 4px solid #b71117;
-	border-left: 4px solid #b71117;
+	border-bottom: 4px solid #00bff3;
+	border-left: 4px solid #00bff3;
 	margin-top: 60px;
 }
 
@@ -726,7 +762,30 @@ body {
 
 @media screen and (min-width: 900px) {
 	.mission-vision-purpose .purpose {
-		width: 70%;
+		width: 80%;
+		padding-bottom: 59%;
+		right: 0;
+	}
+}
+
+.mission-vision-purpose .purpose div {
+	margin: 105px 0;
+}
+
+@media screen and (min-width: 547px) {
+	.mission-vision-purpose .purpose div {
+		margin: 20px 0;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.mission-vision-purpose .purpose div {
+		margin: 0;
+		padding: 10px;
+		margin-top: 190px;
+		width: 50%;
+		margin-left: 372px;
+		position: absolute;
 	}
 }
 
@@ -738,7 +797,7 @@ body {
 
 .mission-vision-purpose .purpose div p {
 	border-bottom: 4px solid #8560a8;
-	border-left: 4px solid #8560a8;
+	border-right: 4px solid #8560a8;
 	margin-top: 40px;
 }
 

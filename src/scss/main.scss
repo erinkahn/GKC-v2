@@ -477,6 +477,7 @@ body {
 	@media screen and (min-width: 900px){
 		width: 93%;
 		border: none;
+		margin: 9% auto;
 	}
 	@media screen and (min-width: 1024px){
 		width: 83%;
@@ -491,12 +492,18 @@ body {
 			padding: 33% 0;
 			position: relative;
 			margin: 32% 0;
+			@media screen and (min-width: 1224px){
+				margin: 27% 0;
+			}
 
 			h2{
 				margin-top: 46px;
 				position: absolute;
 				padding-top: 36px;
 				left: 20px;
+				@media screen and (min-width: 900px){
+					left: 30px;
+				}
 			}
 			
 			p{
@@ -522,31 +529,34 @@ body {
 		}
 		@media screen and (min-width: 900px){
 			width: 70%;
-			padding-bottom: 200px;
+			padding-bottom: 34%;
 		}
 		@media screen and (min-width: 1024px){
-
+			padding-bottom: 39%;
 		}
 		@media screen and (min-width: 1224px){
-
 		}
 
 		div{
-			padding: 60px 0;
-			margin: 10% 0;
 			padding: 89px 0;
-
 			@media screen and (min-width: 900px){
-				margin: 24% 0;
+				padding: 10px;
+				margin-top: 150px;
+				width: 70%;
+				margin-left: 194px;
+				position: absolute;
+			}
+			@media screen and (min-width: 1024px){
+				
 			}
 
 			h2{
-				color: #f29734;
+				color: #6aab35;
 			}
 	
 			p{
-				border-bottom: 4px solid #f29734;
-				border-right: 4px solid #f29734;
+				border-bottom: 4px solid #6aab35;
+				border-right: 4px solid #6aab35;
 				margin-top: 60px;
 			}
 		}
@@ -561,14 +571,16 @@ body {
 		background-position: cover;
 		width: 100%;
 		padding-bottom: 78%;
-		@media screen and (min-width: 460px){
-			padding-bottom: 70%;
-		}
+
 		@media screen and (min-width: 547px){
-			padding-bottom: 54%;
+			padding-bottom: 84%;
 		}
 		@media screen and (min-width: 900px){
-			width: 70%;
+			width: 80%;
+			padding-bottom: 59%;
+			right: 0;
+			margin-left: 157px;
+			margin-top: 200px;
 		}
 		@media screen and (min-width: 1024px){
 
@@ -578,15 +590,26 @@ body {
 		}
 
 		div{
+			@media screen and (min-width: 547px){
+				margin: 192px 0;
+			}
+			@media screen and (min-width: 900px){
+				padding: 10px;
+				margin-top: 120px;
+				width: 60%;
+				left: 38px;
+				position: absolute;
+				padding: 89px 0;
+			}
 
 			h2{
-				color: #b71117;
+				color: #00bff3;
 				left: 23px;
 			}
 	
 			p{
-				border-bottom: 4px solid #b71117;
-				border-left: 4px solid #b71117;
+				border-bottom: 4px solid #00bff3;
+				border-left: 4px solid #00bff3;
 				margin-top: 60px;
 			}
 		}
@@ -603,7 +626,9 @@ body {
 		padding-bottom: 47%;
 
 		@media screen and (min-width: 900px){
-			width: 70%;
+			width: 80%;
+			padding-bottom: 59%;
+			right: 0;
 		}
 		@media screen and (min-width: 1024px){
 
@@ -613,6 +638,18 @@ body {
 		}
 
 		div{
+			margin: 105px 0;
+			@media screen and (min-width: 547px){
+				margin: 20px 0;
+			}
+			@media screen and (min-width: 900px){
+				margin: 0;
+				padding: 10px;
+				margin-top: 190px;
+				width: 50%;
+				margin-left: 372px;
+				position: absolute;
+			}
 
 			h2{
 				color: #8560a8;
@@ -622,7 +659,7 @@ body {
 
 			p{
 				border-bottom: 4px solid #8560a8;
-				border-left: 4px solid #8560a8;
+				border-right: 4px solid #8560a8;
 				margin-top: 40px;
 			}
 		}
