@@ -469,7 +469,9 @@ body {
 	margin: 19% auto;
 	line-height: 1.6em;
 	padding-bottom: 39%;
-
+	@media screen and (min-width: 547px){
+		padding-bottom: 20%;
+	}
 	@media screen and (max-width: 899px){
 		width: 90%;
 		max-width: 502px;
@@ -477,13 +479,18 @@ body {
 	@media screen and (min-width: 900px){
 		width: 93%;
 		border: none;
-		margin: 9% auto;
+		margin: 7% auto;
+		padding-bottom: 10%;
 	}
 	@media screen and (min-width: 1024px){
 		width: 93%;
+		margin: 5% auto;
+		padding-bottom: 9%;
 	}
 	@media screen and (min-width: 1224px){
 		width: 83%;
+		padding-bottom: 0%;
+		margin: 10% auto;
 	}
 	@media screen and (min-width: 1440px){
 		width: 73%;
@@ -534,12 +541,12 @@ body {
 			width: 70%;
 			padding-bottom: 34%;
 		}
-		@media screen and (min-width: 1024px){
-			padding-bottom: 39%;
+		@media screen and (min-width: 1224px){
+			padding-bottom: 29%;
 		}
 		@media screen and (min-width: 1440px){
 			width: 60%;
-			padding-bottom: 29%;
+			padding-bottom: 26%
 		}
 		
 
@@ -562,8 +569,8 @@ body {
 				width: 44%;
 			}
 			@media screen and (min-width: 1440px){
-				width: 38%;
-				right: 214px;
+				width: 40%;
+				right: 234px;
 				margin-top: 130px;
 			}
 
@@ -603,14 +610,14 @@ body {
 			margin-top: 175px;
 			margin-left: 348px;
 			width: 63%;
-			padding-bottom: 55%;
+			padding-bottom: 48%;
 		}
 		@media screen and (min-width: 1224px){
 			margin-left: 371px;
+			padding-bottom: 45%;
 		}
 		@media screen and (min-width: 1440px){
 			width: 57%;
-			padding-bottom: 48%;
 		}
 
 		div{
@@ -666,7 +673,7 @@ body {
 
 		@media screen and (min-width: 900px){
 			width: 80%;
-			padding-bottom: 59%;
+			padding-bottom: 37%;
 			right: 0;
 		}
 		@media screen and (min-width: 1224px){

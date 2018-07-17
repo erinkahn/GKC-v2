@@ -580,6 +580,12 @@ body {
 	padding-bottom: 39%;
 }
 
+@media screen and (min-width: 547px) {
+	.mission-vision-purpose {
+		padding-bottom: 20%;
+	}
+}
+
 @media screen and (max-width: 899px) {
 	.mission-vision-purpose {
 		width: 90%;
@@ -591,19 +597,24 @@ body {
 	.mission-vision-purpose {
 		width: 93%;
 		border: none;
-		margin: 9% auto;
+		margin: 7% auto;
+		padding-bottom: 10%;
 	}
 }
 
 @media screen and (min-width: 1024px) {
 	.mission-vision-purpose {
 		width: 93%;
+		margin: 5% auto;
+		padding-bottom: 9%;
 	}
 }
 
 @media screen and (min-width: 1224px) {
 	.mission-vision-purpose {
 		width: 83%;
+		padding-bottom: 0%;
+		margin: 10% auto;
 	}
 }
 
@@ -672,16 +683,16 @@ body {
 	}
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1224px) {
 	.mission-vision-purpose .mission {
-		padding-bottom: 39%;
+		padding-bottom: 29%;
 	}
 }
 
 @media screen and (min-width: 1440px) {
 	.mission-vision-purpose .mission {
 		width: 60%;
-		padding-bottom: 29%;
+		padding-bottom: 26%;
 	}
 }
 
@@ -716,8 +727,8 @@ body {
 
 @media screen and (min-width: 1440px) {
 	.mission-vision-purpose .mission div {
-		width: 38%;
-		right: 214px;
+		width: 40%;
+		right: 234px;
 		margin-top: 130px;
 	}
 }
@@ -763,20 +774,20 @@ body {
 		margin-top: 175px;
 		margin-left: 348px;
 		width: 63%;
-		padding-bottom: 55%;
+		padding-bottom: 48%;
 	}
 }
 
 @media screen and (min-width: 1224px) {
 	.mission-vision-purpose .vision {
 		margin-left: 371px;
+		padding-bottom: 45%;
 	}
 }
 
 @media screen and (min-width: 1440px) {
 	.mission-vision-purpose .vision {
 		width: 57%;
-		padding-bottom: 48%;
 	}
 }
 
@@ -845,7 +856,7 @@ body {
 @media screen and (min-width: 900px) {
 	.mission-vision-purpose .purpose {
 		width: 80%;
-		padding-bottom: 59%;
+		padding-bottom: 37%;
 		right: 0;
 	}
 }
