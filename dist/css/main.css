@@ -55,7 +55,7 @@ body {
 }
 
 .hero .homeLogo img {
-	padding-top: 15%;
+	padding-top: 18%;
 	position: absolute;
 	width: 37%;
 	left: 29.5%;
@@ -73,21 +73,15 @@ body {
 	}
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 767px) {
 	.hero .homeLogo img {
-		padding-top: 16%;
+		padding-top: 23%;
 	}
 }
 
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 768px) {
 	.hero .homeLogo img {
 		padding-top: 17%;
-	}
-}
-
-@media screen and (min-width: 1440px) {
-	.hero .homeLogo img {
-		padding-top: 18%;
 	}
 }
 
@@ -105,6 +99,12 @@ body {
 
 @media screen and (max-width: 767px) {
 	.hero nav ul {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.hero nav ul {
 		padding: 22px 0;
 	}
 }
@@ -116,12 +116,6 @@ body {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	letter-spacing: 0.09em;
 	padding-right: 45px;
-}
-
-@media screen and (max-width: 767px) {
-	.hero nav ul li {
-		display: none;
-	}
 }
 
 .hero nav ul li:first-child {
@@ -179,6 +173,15 @@ body {
 	.burger {
 		display: none;
 	}
+}
+
+.burger .mobileNav {
+	display: none;
+}
+
+.burger.openNav .mobileNav {
+	display: flex;
+	z-index: 10;
 }
 
 .top {
