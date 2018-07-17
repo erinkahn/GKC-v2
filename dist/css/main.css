@@ -3,7 +3,14 @@
 }
 
 p, a {
+	letter-spacing: 0.08em;
 	font-family: 'Source Sans Pro', sans-serif;
+	color: #606060;
+}
+
+h2 {
+	font-size: 1.7em;
+	color: #606060;
 }
 
 a {
@@ -150,12 +157,14 @@ body {
 		flex-direction: column;
 		width: 90%;
 		align-items: center;
+		margin-bottom: 10%;
 	}
 }
 
 @media screen and (min-width: 900px) {
 	.top {
 		width: 92%;
+		margin-bottom: 6%;
 	}
 }
 
@@ -225,7 +234,6 @@ body {
 
 .top .about p {
 	line-height: 1.6em;
-	letter-spacing: 0.09em;
 }
 
 @media screen and (min-width: 1366px) {
@@ -239,7 +247,6 @@ body {
 	text-align: center;
 	width: 30%;
 	border: 1px solid #6aab35;
-	color: #606060;
 }
 
 @media screen and (max-width: 899px) {
@@ -252,10 +259,6 @@ body {
 		padding-bottom: 4%;
 		padding: 0 20px;
 	}
-}
-
-.top .stories h2 {
-	font-size: 1.7em;
 }
 
 .top .stories div {
@@ -316,7 +319,7 @@ body {
 }
 
 .top .events span .box {
-	margin-top: 20px;
+	margin-top: 30px;
 	padding: 0px 18px;
 	background-color: #706e6e;
 }
@@ -350,12 +353,10 @@ body {
 .top .events span .eventTitle p:first-child {
 	text-transform: uppercase;
 	font-weight: bold;
-	letter-spacing: 0.08em;
 	font-size: 1.1em;
 }
 
 .top .events span .eventTitle p:last-child {
-	letter-spacing: 0.08em;
 	font-size: 0.9em;
 }
 
@@ -372,6 +373,105 @@ body {
 
 .top .events a:hover {
 	color: #fff;
+}
+
+.waysToServe {
+	display: flex;
+	text-align: center;
+	margin: 0 auto;
+	flex-direction: column;
+}
+
+.waysToServe .serve {
+	flex-direction: row;
+}
+
+@media screen and (max-width: 899px) {
+	.waysToServe .serve {
+		flex-direction: column;
+	}
+}
+
+.waysToServe .serve div {
+	position: relative;
+}
+
+.waysToServe .serve div:first-child {
+	position: relative;
+	background-image: url("../img/giveTake.jpg");
+	background-repeat: no-repeat;
+	height: 0;
+	background-size: contain;
+	width: 100%;
+	padding-bottom: 100%;
+}
+
+.waysToServe .serve div:nth-child(2) {
+	position: relative;
+	background-image: url("../img/delivery.jpg");
+	background-repeat: no-repeat;
+	height: 0;
+	background-size: cover;
+	width: 100%;
+	padding-bottom: 100%;
+}
+
+.waysToServe .serve div:last-child {
+	position: relative;
+	background-image: url("../img/meals.jpg");
+	background-repeat: no-repeat;
+	height: 0;
+	background-size: contain;
+	width: 100%;
+	padding-bottom: 100%;
+}
+
+.waysToServe .serve div h3 {
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.582);
+	padding: 10px 0;
+	letter-spacing: 0.08em;
+	font-weight: 500;
+	position: absolute;
+	z-index: 2;
+	text-align: center;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+.waysToServe .serve div .dot {
+	position: relative;
+	color: #fff;
+	font-size: 2em;
+}
+
+.waysToServe .serve div .dot .dot1 {
+	background-color: #6aab35;
+	border-radius: 100%;
+	padding: 0 10px;
+	position: absolute;
+	bottom: 40px;
+	right: 30px;
+}
+
+.waysToServe .serve div .dot .dot2 {
+	background-color: #00bff3;
+	border-radius: 100%;
+	padding: 0px 10px;
+	position: absolute;
+	bottom: 40px;
+	right: 30px;
+}
+
+.waysToServe .serve div .dot .dot3 {
+	background-color: #f29734;
+	border-radius: 100%;
+	padding: 0px 10px;
+	position: absolute;
+	bottom: 40px;
+	right: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

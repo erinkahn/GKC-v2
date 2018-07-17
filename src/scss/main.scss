@@ -4,7 +4,14 @@
 }
 
 p, a{
+	letter-spacing: 0.08em;
 	font-family: 'Source Sans Pro', sans-serif;
+	color: #606060;
+}
+
+h2{
+	font-size: 1.7em;
+	color: #606060;
 }
 
 a{
@@ -117,9 +124,11 @@ body {
 		flex-direction: column;
 		width: 90%;
 		align-items: center;
+		margin-bottom: 10%;
 	}
 	@media screen and (min-width: 900px){
 		width: 92%;
+		margin-bottom: 6%;
 	}
 	@media screen and (min-width: 1024px){
 		width: 90%;
@@ -170,7 +179,6 @@ body {
 
 		p{
 			line-height: 1.6em;
-			letter-spacing: 0.09em;
 			@media screen and (min-width: 1366px){
 				font-size: 1.1em;
 			}
@@ -191,11 +199,6 @@ body {
 		text-align: center;
 		width: 30%;
 		border: 1px solid #6aab35;
-		color: #606060;
-
-		h2{
-			font-size: 1.7em;
-		}
 
 		div{
 			padding-bottom: 13px;
@@ -250,7 +253,7 @@ body {
 			justify-content: space-evenly;
 
 			.box{
-				margin-top: 20px;
+				margin-top: 30px;
 				padding: 0px 18px;
 				background-color: #706e6e;
 
@@ -280,12 +283,10 @@ body {
 					&:first-child{
 						text-transform: uppercase;
 						font-weight: bold;
-						letter-spacing: 0.08em;
 						font-size: 1.1em;
 					}
 
 					&:last-child{
-						letter-spacing: 0.08em;
 						font-size: 0.9em;
 					}
 				}
@@ -307,4 +308,106 @@ body {
 			}
 		}
 	}
+}
+
+
+.waysToServe{
+	display: flex;
+	text-align: center;
+	margin: 0 auto;
+	flex-direction: column;
+
+	h2{
+		// width: 100%;
+	}
+
+	.serve{
+		@media screen and (max-width: 899px){
+			flex-direction: column;
+			
+		}
+		flex-direction: row;
+
+		div{
+			position: relative;
+
+			&:first-child{
+				position: relative;
+				background-image: url('../img/giveTake.jpg');
+				background-repeat: no-repeat;
+				height: 0;
+				background-size: contain;
+				width: 100%;
+				padding-bottom: 100%;
+			}
+
+			&:nth-child(2){
+				position: relative;
+				background-image: url('../img/delivery.jpg');
+				background-repeat: no-repeat;
+				height: 0;
+				background-size: cover;
+				width: 100%;
+				padding-bottom: 100%;
+			}
+
+			&:last-child{
+				position: relative;
+				background-image: url('../img/meals.jpg');
+				background-repeat: no-repeat;
+				height: 0;
+				background-size: contain;
+				width: 100%;
+				padding-bottom: 100%;
+			}
+
+			h3{
+				color: #fff;
+				background-color: rgba(0, 0, 0, 0.582);
+				padding: 10px 0;
+				letter-spacing: 0.08em;
+				font-weight: 500;
+				position: absolute;
+				z-index: 2;
+				text-align: center;
+				left: 50%;
+				top: 50%;
+				transform: translateX(-50%); 
+				width: 100%;
+			}
+
+			.dot{
+				position: relative;
+				color: #fff;
+				font-size: 2em;
+
+				.dot1{
+					background-color: #6aab35;
+					border-radius: 100%;
+					padding: 0 10px;
+					position: absolute;
+					bottom: 40px;
+					right: 30px;
+				}
+				.dot2{
+					background-color: #00bff3;
+					border-radius: 100%;
+					padding: 0px 10px; 
+					position: absolute;
+					bottom: 40px;
+					right: 30px;
+				}
+				.dot3{
+					background-color: #f29734;
+					border-radius: 100%;
+					padding: 0px 10px;
+					position: absolute;
+					bottom: 40px;
+					right: 30px;
+				}
+				
+			}
+		}
+	}
+
 }
