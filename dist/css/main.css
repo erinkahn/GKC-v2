@@ -380,53 +380,108 @@ body {
 	text-align: center;
 	margin: 0 auto;
 	flex-direction: column;
+	margin-bottom: 10%;
 }
 
 .waysToServe .serve {
-	flex-direction: row;
+	margin: 0 auto;
 }
 
 @media screen and (max-width: 899px) {
 	.waysToServe .serve {
 		flex-direction: column;
+		width: 90%;
+		max-width: 500px;
 	}
 }
 
-.waysToServe .serve div {
-	position: relative;
+@media screen and (min-width: 900px) {
+	.waysToServe .serve {
+		flex-direction: row;
+		display: flex;
+		width: 93%;
+	}
 }
 
-.waysToServe .serve div:first-child {
+@media screen and (min-width: 1224px) {
+	.waysToServe .serve {
+		width: 83%;
+		max-width: 1290px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.waysToServe .serve {
+		width: 73%;
+	}
+}
+
+.waysToServe .serve .giveTake {
 	position: relative;
 	background-image: url("../img/giveTake.jpg");
 	background-repeat: no-repeat;
 	height: 0;
-	background-size: contain;
+	background-size: 100% auto;
+	background-position: cover;
 	width: 100%;
 	padding-bottom: 100%;
 }
 
-.waysToServe .serve div:nth-child(2) {
+@media screen and (min-width: 900px) {
+	.waysToServe .serve .giveTake {
+		padding-bottom: 31%;
+		margin-right: 10px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.waysToServe .serve .giveTake {
+		margin-right: 30px;
+	}
+}
+
+.waysToServe .serve .deliver {
 	position: relative;
 	background-image: url("../img/delivery.jpg");
 	background-repeat: no-repeat;
 	height: 0;
-	background-size: cover;
+	background-size: 100% auto;
+	background-position: cover;
 	width: 100%;
 	padding-bottom: 100%;
 }
 
-.waysToServe .serve div:last-child {
+@media screen and (min-width: 900px) {
+	.waysToServe .serve .deliver {
+		padding-bottom: 31%;
+		margin-right: 10px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.waysToServe .serve .deliver {
+		margin-right: 30px;
+	}
+}
+
+.waysToServe .serve .meals {
 	position: relative;
 	background-image: url("../img/meals.jpg");
 	background-repeat: no-repeat;
 	height: 0;
-	background-size: contain;
+	background-size: 100% auto;
+	background-position: cover;
 	width: 100%;
 	padding-bottom: 100%;
 }
 
-.waysToServe .serve div h3 {
+@media screen and (min-width: 900px) {
+	.waysToServe .serve .meals {
+		padding-bottom: 31%;
+	}
+}
+
+.waysToServe .serve h3 {
 	color: #fff;
 	background-color: rgba(0, 0, 0, 0.582);
 	padding: 10px 0;
@@ -436,42 +491,87 @@ body {
 	z-index: 2;
 	text-align: center;
 	left: 50%;
-	top: 50%;
+	top: 36%;
 	transform: translateX(-50%);
-	width: 100%;
+	width: 95%;
+	font-size: 1.4em;
 }
 
-.waysToServe .serve div .dot {
-	position: relative;
+@media screen and (min-width: 900px) {
+	.waysToServe .serve h3 {
+		top: 34%;
+	}
+}
+
+.dot {
 	color: #fff;
 	font-size: 2em;
 }
 
-.waysToServe .serve div .dot .dot1 {
+.dot .dot1 {
 	background-color: #6aab35;
 	border-radius: 100%;
-	padding: 0 10px;
+	padding: 0 10px 2px 10px;
 	position: absolute;
-	bottom: 40px;
+	bottom: 55px;
 	right: 30px;
 }
 
-.waysToServe .serve div .dot .dot2 {
+@media screen and (min-width: 900px) {
+	.dot .dot1 {
+		bottom: 25px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.dot .dot1 {
+		bottom: 33px;
+		right: 20px;
+	}
+}
+
+.dot .dot2 {
 	background-color: #00bff3;
 	border-radius: 100%;
-	padding: 0px 10px;
+	padding: 0 10px 2px 10px;
 	position: absolute;
-	bottom: 40px;
+	bottom: 55px;
 	right: 30px;
 }
 
-.waysToServe .serve div .dot .dot3 {
-	background-color: #f29734;
+@media screen and (min-width: 900px) {
+	.dot .dot2 {
+		bottom: 25px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.dot .dot2 {
+		bottom: 33px;
+		right: 20px;
+	}
+}
+
+.dot .dot3 {
+	background-color: #919090;
 	border-radius: 100%;
-	padding: 0px 10px;
+	padding: 0 10px 2px 10px;
 	position: absolute;
-	bottom: 40px;
+	bottom: 55px;
 	right: 30px;
+}
+
+@media screen and (min-width: 900px) {
+	.dot .dot3 {
+		bottom: 25px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.dot .dot3 {
+		bottom: 33px;
+		right: 20px;
+	}
 }
 
 /*# sourceMappingURL=main.css.map */
