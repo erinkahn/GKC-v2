@@ -24,6 +24,11 @@ body {
 }
 
 .hero{
+	@media screen and (max-width: 899px){
+		background-image: url('../img/heroHomeMobile.jpg');
+		width: 100%;
+		height: 80vw;
+	}
 	position: relative;
 	background-image: url('../img/heroHome.jpg');
 	background-repeat: no-repeat;
@@ -41,6 +46,17 @@ body {
 		position: relative;
 		
 		img{
+			&:first-child{
+				@media screen and (max-width: 899px){
+					display: none;
+				}
+			}
+
+			&:last-child{
+				@media screen and (min-width: 900px){
+					display: none;
+				}
+			}
 
 			@media screen and (max-width: 767px){
 				padding-top: 19.2%;
@@ -60,7 +76,8 @@ body {
 			position: absolute;
 			width: 37%;
 			
-			left: 29.5%;
+			left: 29.5%;	
+			
 		}
 		
 	}
