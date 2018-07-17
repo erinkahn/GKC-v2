@@ -483,7 +483,7 @@ body {
 
 .waysToServe .serve h3 {
 	color: #fff;
-	background-color: rgba(0, 0, 0, 0.582);
+	background-color: rgba(0, 0, 0, 0.682);
 	padding: 10px 0;
 	letter-spacing: 0.08em;
 	font-weight: 500;
@@ -575,11 +575,147 @@ body {
 }
 
 .mission-vision-purpose {
+	margin: 0 auto;
+	line-height: 1.6em;
 	margin-bottom: 10%;
+}
+
+@media screen and (max-width: 899px) {
+	.mission-vision-purpose {
+		width: 90%;
+		max-width: 502px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.mission-vision-purpose {
+		width: 93%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.mission-vision-purpose {
+		width: 83%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.mission-vision-purpose {
+		width: 73%;
+	}
+}
+
+.mission-vision-purpose .mission, .mission-vision-purpose .vision, .mission-vision-purpose .purpose {
+	margin-bottom: 24%;
+}
+
+.mission-vision-purpose .mission div, .mission-vision-purpose .vision div, .mission-vision-purpose .purpose div {
+	padding: 33% 0;
+}
+
+.mission-vision-purpose .mission div h2, .mission-vision-purpose .vision div h2, .mission-vision-purpose .purpose div h2 {
+	margin-top: 46px;
+	position: absolute;
+	padding-top: 36px;
+}
+
+.mission-vision-purpose .mission div p, .mission-vision-purpose .vision div p, .mission-vision-purpose .purpose div p {
+	background-color: #f6f3f2;
+	padding: 59px 20px 20px 20px;
+}
+
+.mission-vision-purpose .mission {
+	background-image: url("../img/mission.png");
+	background-repeat: no-repeat;
+	height: 0;
+	background-size: 100% auto;
+	background-position: cover;
+	width: 100%;
+	padding-bottom: 100%;
+}
+
+.mission-vision-purpose .mission div {
+	position: relative;
+	padding: 70px 0;
+	margin: 10% 0;
+}
+
+.mission-vision-purpose .mission div h2 {
+	color: #f29734;
+	left: 20px;
+}
+
+.mission-vision-purpose .mission div p {
+	margin-top: 60px;
+}
+
+.mission-vision-purpose .vision {
+	background-image: url("../img/vision.png");
+	background-repeat: no-repeat;
+	height: 0;
+	background-size: 100% auto;
+	background-position: cover;
+	width: 100%;
+	padding-bottom: 82%;
+}
+
+.mission-vision-purpose .vision div h2 {
+	color: #b71117;
+	left: 46px;
+}
+
+.mission-vision-purpose .vision div p {
+	margin-top: 60px;
+}
+
+.mission-vision-purpose .purpose {
+	background-image: url("../img/purpose.png");
+	background-repeat: no-repeat;
+	height: 0;
+	background-size: 100% auto;
+	background-position: cover;
+	width: 100%;
+	padding-bottom: 80%;
+}
+
+.mission-vision-purpose .purpose div h2 {
+	color: #8560a8;
+	left: 46px;
+	margin-top: 30px;
+}
+
+.mission-vision-purpose .purpose div p {
+	margin-top: 40px;
 }
 
 .sponsors {
 	margin-bottom: 10%;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 899px) {
+	.sponsors {
+		width: 90%;
+		max-width: 502px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.sponsors {
+		width: 93%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.sponsors {
+		width: 83%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.sponsors {
+		width: 73%;
+	}
 }
 
 /*# sourceMappingURL=main.css.map */
