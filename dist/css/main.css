@@ -750,6 +750,12 @@ body {
 	}
 }
 
+@media screen and (min-width: 1500px) {
+	.mission-vision-purpose .mission div {
+		margin-top: 190px;
+	}
+}
+
 .mission-vision-purpose .mission div h2 {
 	color: #6aab35;
 }
@@ -850,6 +856,12 @@ body {
 	}
 }
 
+@media screen and (min-width: 1500px) {
+	.mission-vision-purpose .vision div {
+		margin-top: 190px;
+	}
+}
+
 .mission-vision-purpose .vision div h2 {
 	color: #00bff3;
 	left: 23px;
@@ -932,6 +944,12 @@ body {
 		width: 24%;
 		right: 390px;
 		margin-top: 198px;
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	.mission-vision-purpose .purpose div {
+		margin-top: 250px;
 	}
 }
 
