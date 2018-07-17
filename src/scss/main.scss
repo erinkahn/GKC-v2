@@ -562,14 +562,17 @@ body {
 		}
 		@media screen and (min-width: 900px){
 			width: 70%;
-			padding-bottom: 34%;
+			padding-bottom: 38%;
+		}
+		@media screen and (min-width: 1024px){
+			padding-bottom: 41%;
 		}
 		@media screen and (min-width: 1224px){
-			padding-bottom: 29%;
+			padding-bottom: 40%;
 		}
 		@media screen and (min-width: 1440px){
 			width: 60%;
-			padding-bottom: 26%
+			padding-bottom: 34%;
 		}
 		
 
@@ -624,7 +627,7 @@ body {
 		}
 		@media screen and (min-width: 900px){
 			width: 80%;
-			padding-bottom: 63%;
+			padding-bottom: 67%;
 			right: 0;
 			margin-left: 157px;
 			margin-top: 200px;
@@ -633,14 +636,15 @@ body {
 			margin-top: 175px;
 			margin-left: 348px;
 			width: 63%;
-			padding-bottom: 48%;
+			padding-bottom: 57%;
 		}
 		@media screen and (min-width: 1224px){
 			margin-left: 371px;
-			padding-bottom: 45%;
+			padding-bottom: 57%;
 		}
 		@media screen and (min-width: 1440px){
 			width: 57%;
+			padding-bottom: 54%;
 		}
 
 		div{
