@@ -480,9 +480,12 @@ body {
 		margin: 9% auto;
 	}
 	@media screen and (min-width: 1024px){
-		width: 83%;
+		width: 93%;
 	}
 	@media screen and (min-width: 1224px){
+		width: 83%;
+	}
+	@media screen and (min-width: 1440px){
 		width: 73%;
 	}
 
@@ -534,8 +537,11 @@ body {
 		@media screen and (min-width: 1024px){
 			padding-bottom: 39%;
 		}
-		@media screen and (min-width: 1224px){
+		@media screen and (min-width: 1440px){
+			width: 60%;
+			padding-bottom: 29%;
 		}
+		
 
 		div{
 			padding: 89px 0;
@@ -543,11 +549,22 @@ body {
 				padding: 10px;
 				margin-top: 150px;
 				width: 70%;
-				margin-left: 194px;
+				right: 30px;
 				position: absolute;
 			}
 			@media screen and (min-width: 1024px){
-				
+				width: 52%;
+				margin-top: 180px;
+				right: 32px;
+			}
+			@media screen and (min-width: 1224px){
+				right: 100px;
+				width: 44%;
+			}
+			@media screen and (min-width: 1440px){
+				width: 38%;
+				right: 214px;
+				margin-top: 130px;
 			}
 
 			h2{
@@ -577,16 +594,23 @@ body {
 		}
 		@media screen and (min-width: 900px){
 			width: 80%;
-			padding-bottom: 59%;
+			padding-bottom: 63%;
 			right: 0;
 			margin-left: 157px;
 			margin-top: 200px;
 		}
 		@media screen and (min-width: 1024px){
-
+			margin-top: 175px;
+			margin-left: 348px;
+			width: 63%;
+			padding-bottom: 55%;
 		}
 		@media screen and (min-width: 1224px){
-
+			margin-left: 371px;
+		}
+		@media screen and (min-width: 1440px){
+			width: 57%;
+			padding-bottom: 48%;
 		}
 
 		div{
@@ -595,11 +619,26 @@ body {
 			}
 			@media screen and (min-width: 900px){
 				padding: 10px;
-				margin-top: 120px;
+				margin-top: 150px;
 				width: 60%;
-				left: 38px;
+				left: 40px;
 				position: absolute;
 				padding: 89px 0;
+			}
+			@media screen and (min-width: 1024px){
+				margin-top: 125px;
+				width: 43%;
+				left: 40px;
+			}
+			@media screen and (min-width: 1224px){
+				margin-top: 140px;
+				width: 38%;
+				left: 200px;
+			}
+			@media screen and (min-width: 1440px){
+				width: 30%;
+				left: 330px;
+				margin-top: 120px;
 			}
 
 			h2{
@@ -630,11 +669,11 @@ body {
 			padding-bottom: 59%;
 			right: 0;
 		}
-		@media screen and (min-width: 1024px){
-
-		}
 		@media screen and (min-width: 1224px){
-
+			width: 73%;
+		}
+		@media screen and (min-width: 1440px){
+			width: 63%;
 		}
 
 		div{
@@ -645,16 +684,33 @@ body {
 			@media screen and (min-width: 900px){
 				margin: 0;
 				padding: 10px;
-				margin-top: 190px;
+				margin-top: 199px;
 				width: 50%;
-				margin-left: 372px;
+				right: 30px;
 				position: absolute;
+			}
+			@media screen and (min-width: 1024px){
+				margin-top: 240px;
+				width: 40%;
+				right: 32px;
+			}
+			@media screen and (min-width: 1224px){
+				width: 33%;
+				right: 200px;
+			}
+			@media screen and (min-width: 1440px){
+				width: 24%;
+				right: 390px;
+				margin-top: 198px;
 			}
 
 			h2{
 				color: #8560a8;
 				margin-top: 30px;
 				left: 23px;
+				@media screen and (min-width: 900px){
+					left: 28px;
+				}
 			}
 
 			p{
