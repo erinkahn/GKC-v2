@@ -106,12 +106,6 @@ body {
 	display: flex;
 }
 
-@media screen and (max-width: 767px) {
-	.hero nav {
-		display: none;
-	}
-}
-
 .hero nav ul {
 	width: 100%;
 	margin: 0 auto;
@@ -120,29 +114,23 @@ body {
 	top: 0;
 }
 
+@media screen and (max-width: 767px) {
+	.hero nav ul {
+		display: none;
+	}
+}
+
 .hero nav ul li {
 	display: inline-block;
 	color: #fff;
 	text-transform: uppercase;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	letter-spacing: 0.06em;
-	padding-right: 40px;
+	letter-spacing: 0.09em;
+	padding-right: 45px;
 }
 
 .hero nav ul li:first-child {
 	margin-left: 50px;
-}
-
-@media screen and (min-width: 900px) {
-	.hero nav ul li {
-		padding-right: 55px;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.hero nav ul li {
-		padding-right: 65px;
-	}
 }
 
 .hero nav ul li:hover {
@@ -151,13 +139,16 @@ body {
 }
 
 .hero nav .donate {
+	position: fixed;
+	right: 8px;
+	z-index: 4;
 	color: #fff;
 	text-transform: uppercase;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	letter-spacing: 0.06em;
 	text-decoration: none;
 	background-color: #6aab35;
-	padding: 12px 18px;
+	padding: 13px 18px;
 }
 
 .hero nav .donate:hover {
