@@ -170,19 +170,19 @@ body {
 
 @media screen and (min-width: 1024px) {
 	.top {
-		width: 90%;
+		width: 93%;
 	}
 }
 
 @media screen and (min-width: 1224px) {
 	.top {
-		width: 80%;
+		width: 83%;
 	}
 }
 
 @media screen and (min-width: 1440px) {
 	.top {
-		width: 70%;
+		width: 73%;
 	}
 }
 
@@ -572,6 +572,14 @@ body {
 		bottom: 33px;
 		right: 20px;
 	}
+}
+
+.mission-vision-purpose {
+	margin-bottom: 10%;
+}
+
+.sponsors {
+	margin-bottom: 10%;
 }
 
 /*# sourceMappingURL=main.css.map */
