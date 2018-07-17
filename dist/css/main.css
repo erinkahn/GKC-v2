@@ -625,18 +625,21 @@ body {
 }
 
 .mission-vision-purpose .mission {
+	border-top: 4px solid #f29734;
+	border-left: 4px solid #f29734;
 	background-image: url("../img/mission.png");
 	background-repeat: no-repeat;
 	height: 0;
 	background-size: 100% auto;
 	background-position: cover;
 	width: 100%;
-	padding-bottom: 100%;
+	padding-bottom: 46%;
+	margin-bottom: 86%;
 }
 
 .mission-vision-purpose .mission div {
 	position: relative;
-	padding: 70px 0;
+	padding: 60px 0;
 	margin: 10% 0;
 }
 
@@ -650,13 +653,16 @@ body {
 }
 
 .mission-vision-purpose .vision {
+	border-top: 4px solid #b71117;
+	border-right: 4px solid #b71117;
 	background-image: url("../img/vision.png");
 	background-repeat: no-repeat;
 	height: 0;
 	background-size: 100% auto;
 	background-position: cover;
 	width: 100%;
-	padding-bottom: 82%;
+	padding-bottom: 50%;
+	margin-bottom: 56%;
 }
 
 .mission-vision-purpose .vision div h2 {
@@ -669,13 +675,16 @@ body {
 }
 
 .mission-vision-purpose .purpose {
+	border-top: 4px solid #8560a8;
+	border-left: 4px solid #8560a8;
 	background-image: url("../img/purpose.png");
 	background-repeat: no-repeat;
 	height: 0;
 	background-size: 100% auto;
 	background-position: cover;
 	width: 100%;
-	padding-bottom: 80%;
+	padding-bottom: 44%;
+	margin-bottom: 56%;
 }
 
 .mission-vision-purpose .purpose div h2 {
