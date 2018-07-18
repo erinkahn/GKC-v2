@@ -1048,6 +1048,7 @@ body {
 	.sponsors {
 		width: 90%;
 		padding-top: 10%;
+		padding-bottom: 19%;
 	}
 }
 
@@ -1063,9 +1064,16 @@ body {
 	}
 }
 
+@media screen and (min-width: 1024px) {
+	.sponsors {
+		padding-bottom: 10%;
+	}
+}
+
 @media screen and (min-width: 1224px) {
 	.sponsors {
 		width: 83%;
+		padding-bottom: 5%;
 	}
 }
 

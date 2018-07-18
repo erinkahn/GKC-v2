@@ -855,6 +855,7 @@ body {
 	@media screen and (max-width: 547px){
 		width: 90%;
 		padding-top: 10%;
+		padding-bottom: 19%;
 	}
 	@media screen and (min-width: 548px){
 		width: 80%;
@@ -862,8 +863,12 @@ body {
 	@media screen and (min-width: 900px){
 		width: 93%;
 	}
+	@media screen and (min-width: 1024px){
+		padding-bottom: 10%;
+	}
 	@media screen and (min-width: 1224px){
 		width: 83%;
+		padding-bottom: 5%;
 	}
 	@media screen and (min-width: 1440px){
 		width: 73%;
