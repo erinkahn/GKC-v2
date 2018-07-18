@@ -584,10 +584,8 @@ body {
 .mission-vision-purpose{
 	margin: 19% auto;
 	line-height: 1.6em;
-	padding-bottom: 39%;
-	@media screen and (min-width: 547px){
-		padding-bottom: 20%;
-	}
+	padding-bottom: 10%;
+
 	@media screen and (max-width: 899px){
 		width: 90%;
 		max-width: 502px;
@@ -793,12 +791,6 @@ body {
 			padding-bottom: 42%;
 			right: 0;
 		}
-		@media screen and (min-width: 1224px){
-			// width: 73%;
-		}
-		@media screen and (min-width: 1440px){
-			// width: 63%;
-		}
 
 		div{
 			margin: 105px 0;
@@ -853,23 +845,26 @@ body {
 
 
 .sponsors{
-	margin-bottom: 10%;
 	margin: 0 auto;
+	padding-bottom: 13%;
 	display: flex;
 	justify-content: center;
-	
 	flex-direction: column;
 	@media screen and (max-width: 547px){
 		width: 90%;
+		padding-top: 10%;
 	}
 	@media screen and (min-width: 548px){
-		width: 60%;
-	}
-	@media screen and (min-width: 900px){
 		width: 80%;
 	}
+	@media screen and (min-width: 900px){
+		width: 93%;
+	}
 	@media screen and (min-width: 1224px){
-		width: 70%;
+		width: 83%;
+	}
+	@media screen and (min-width: 1440px){
+		width: 73%;
 	}
 
 	h2{
@@ -891,5 +886,6 @@ body {
 		background-position: cover;
 		width: 100%;
 		padding-bottom: 40%;
+		
 	}
 }
