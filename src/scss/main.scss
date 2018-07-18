@@ -204,10 +204,14 @@ body {
 		margin: 0 auto;
 		
 		li{
+			transition: .2s ease-in;
 			text-align: center;
 			text-decoration: none;
 			text-transform: uppercase;
 			list-style: none;
+			&:hover{
+				transform: translateY(-3px);
+			}
 
 			a{
 				padding: 20px;
@@ -860,18 +864,41 @@ body {
 .sponsors{
 	margin-bottom: 10%;
 	margin: 0 auto;
-
-	@media screen and (max-width: 899px){
+	display: flex;
+	justify-content: center;
+	
+	flex-direction: column;
+	@media screen and (max-width: 547px){
 		width: 90%;
-		max-width: 502px;
+	}
+	@media screen and (min-width: 548px){
+		width: 60%;
 	}
 	@media screen and (min-width: 900px){
-		width: 93%;
-	}
-	@media screen and (min-width: 1024px){
-		width: 83%;
+		width: 80%;
 	}
 	@media screen and (min-width: 1224px){
-		width: 73%;
+		width: 70%;
+	}
+
+	h2{
+		text-align: center;
+	}
+
+	.logos{
+		@media screen and (max-width: 899px){
+			background-image: url('../img/scale.png');
+			padding-bottom: 110%;
+		}
+		@media screen and (min-width: 900px){
+			background-image: url('../img/scale2.png');
+		}
+		
+		background-repeat: no-repeat;
+		height: 0;
+		background-size: 100% auto;
+		background-position: cover;
+		width: 100%;
+		padding-bottom: 40%;
 	}
 }
