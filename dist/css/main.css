@@ -106,11 +106,16 @@ body {
 }
 
 .hero nav ul li {
+	transition: .2s ease-in;
 	display: inline-block;
 }
 
 .hero nav ul li:first-child {
 	margin-left: 50px;
+}
+
+.hero nav ul li:hover {
+	transform: translateY(-3px);
 }
 
 .hero nav ul li a {
@@ -120,6 +125,7 @@ body {
 	letter-spacing: 0.09em;
 	padding-right: 45px;
 	text-decoration: none;
+	transition: .2s ease-in-out;
 }
 
 .hero nav ul li a:hover {
@@ -153,7 +159,6 @@ body {
 
 .burger {
 	z-index: 2;
-	position: fixed;
 }
 
 .burger a {
@@ -184,6 +189,7 @@ body {
 }
 
 .burger.x a::after {
+	position: absolute;
 	visibility: visible;
 	display: flex;
 	content: " x ";
@@ -191,7 +197,7 @@ body {
 	color: #fff;
 	font-weight: bold;
 	justify-content: center;
-	padding: 8px 0 10px 0;
+	padding: 8px 19px;
 	font-size: 1.3em;
 	margin-top: -20px;
 }
@@ -233,6 +239,12 @@ body {
 	color: #000;
 	font-weight: bold;
 	font-size: 1.1em;
+}
+
+@media screen and (max-width: 430px) {
+	.mobileNav.openNav li a:hover {
+		font-size: 1em;
+	}
 }
 
 .top {
