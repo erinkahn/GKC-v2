@@ -618,7 +618,7 @@ body {
 }
 
 .dot .dot1 {
-	background-color: #6aab35;
+	background-color: #457404;
 	border-radius: 100%;
 	padding: 0 10px 2px 10px;
 	position: absolute;
@@ -640,7 +640,7 @@ body {
 }
 
 .dot .dot2 {
-	background-color: #00bff3;
+	background-color: #69ad09;
 	border-radius: 100%;
 	padding: 0 10px 2px 10px;
 	position: absolute;
@@ -662,7 +662,7 @@ body {
 }
 
 .dot .dot3 {
-	background-color: #8560a8;
+	background-color: #9ac55e;
 	border-radius: 100%;
 	padding: 0 10px 2px 10px;
 	position: absolute;
@@ -839,12 +839,12 @@ body {
 }
 
 .mission-vision-purpose .mission div h2 {
-	color: #6aab35;
+	color: #457404;
 }
 
 .mission-vision-purpose .mission div p {
-	border-bottom: 4px solid #6aab35;
-	border-right: 4px solid #6aab35;
+	border-bottom: 4px solid #457404;
+	border-right: 4px solid #457404;
 	margin-top: 60px;
 }
 
@@ -940,13 +940,13 @@ body {
 }
 
 .mission-vision-purpose .vision div h2 {
-	color: #00bff3;
+	color: #69ad09;
 	left: 23px;
 }
 
 .mission-vision-purpose .vision div p {
-	border-bottom: 4px solid #00bff3;
-	border-left: 4px solid #00bff3;
+	border-bottom: 4px solid #69ad09;
+	border-left: 4px solid #69ad09;
 	margin-top: 60px;
 }
 
@@ -1019,7 +1019,7 @@ body {
 }
 
 .mission-vision-purpose .purpose div h2 {
-	color: #8560a8;
+	color: #a2bb80;
 	margin-top: 30px;
 	left: 23px;
 }
@@ -1031,8 +1031,8 @@ body {
 }
 
 .mission-vision-purpose .purpose div p {
-	border-bottom: 4px solid #8560a8;
-	border-right: 4px solid #8560a8;
+	border-bottom: 4px solid #a2bb80;
+	border-right: 4px solid #a2bb80;
 	margin-top: 40px;
 }
 
@@ -1156,34 +1156,34 @@ body {
 
 .tabs :first-child {
 	background-image: url("../img/donate.png");
-	background-color: #8dc440;
+	background-color: #65aa05;
 }
 
 .tabs :nth-child(2) {
 	background-image: url("../img/volunteer.png");
-	background-color: #464646;
+	background-color: #7bb728;
 }
 
 .tabs :nth-child(3) {
 	background-image: url("../img/shop.png");
-	background-color: #1b7a94;
+	background-color: #91c24c;
 }
 
 .tabs :nth-child(4) {
 	background-image: url("../img/subscribe.png");
-	background-color: #706e6e;
+	background-color: #a7ce70;
 }
 
 .tabs :nth-child(5) {
 	background-image: url("../img/seek-help.png");
 	border-right: none;
-	background-color: #117328;
+	background-color: #bdda93;
 }
 
 /* tab content container */
 .tab_container {
 	width: 100%;
-	background: #8dc440;
+	background: #457404;
 	overflow: hidden;
 	/* tab content */
 }
