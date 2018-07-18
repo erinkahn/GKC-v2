@@ -4,6 +4,8 @@ to verify that you're working in the right files.`)
 
 // nav menu mobile
 
-document.querySelector('.burger a').addEventListener('click', function() {
-    document.querySelector('.burger').classList.toggle('openNav');
+document.querySelector('.burger').addEventListener('click', function() {
+    document.querySelector('.mobileNav').classList.toggle('openNav');
+    document.querySelector('.donate').classList.toggle('hide');
+    document.querySelector('.burger').classList.toggle('x');
 })
