@@ -900,14 +900,12 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    height: 32px;
-    border-bottom: 1px solid #666965;
     width: 100%;
     display: flex;
     flex-direction: row;
 
     li { /* tab names */
-        width: 100%;
+		width: 100%;
         cursor: pointer;
         flex-grow: 1;
         text-align: center;
@@ -937,36 +935,40 @@ body {
 
 .tabs {
 
-    /* active tab */
+	/* active tab */
     li.active { 
-        background-color: #8dc440;
         color: #fff;
     }
 
     /* donate icon */
     :first-child{ 
-        background-image: url('../img/donate.png');
+		background-image: url('../img/donate.png');
+		background-color: #8dc440
     }
 
     /* volunteer icon */
     :nth-child(2){ 
-        background-image: url('../img/volunteer.png');
+		background-image: url('../img/volunteer.png');
+		background-color: #464646;
     }
 
     /* shop icon */
     :nth-child(3){
-        background-image: url('../img/shop.png');
+		background-image: url('../img/shop.png');
+		background-color: #1b7a94;
     }
 
     /* subscribe icon */
     :nth-child(4){
-        background-image: url('../img/subscribe.png');
+		background-image: url('../img/subscribe.png');
+		background-color: #706e6e;
     }
 
     /* help icon */
     :nth-child(5){
         background-image: url('../img/seek-help.png');
-        border-right: none;
+		border-right: none;
+		background-color: #117328;
     }
 }
 
@@ -998,8 +1000,8 @@ body {
 		h2{
 			@media screen and (max-width: 481px){
 				color: #606060;
+				padding-top: 70px;
 			}
-			padding-top: 120px;
 			font-size: 2em;
 			padding-bottom: 29px;
 			color: #fff;
@@ -1052,7 +1054,7 @@ body {
 /* button for each content tabs*/
 .button-tabs{
     color: #fff;
-    margin:  40px auto;
+    margin: 40px auto;
 	width: 190px;
 	transition: .2s ease-in-out;
 	border: 3px solid #666965;
@@ -1109,7 +1111,7 @@ body {
 /* input donate text color */
 #tab1 input{
     font-size: 0.8em;
-    color: #fff;
+	color: #fff;
 }
 
 /* input subscribe email newsletter*/
@@ -1148,7 +1150,7 @@ body {
 }
 
 /* when mobile, stack tabs up and down, hide left to right*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
     
     /* hide horizontal tabs*/
     .tabs {
@@ -1169,7 +1171,7 @@ body {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        text-align: center;
+		text-align: center;
     }
 
     /* active */
@@ -1198,7 +1200,9 @@ body {
     /* shop etsy img */
     #tab3 img{
         width: 100%;
-    }
+	}
+	
+	
 
     /* input subscribe email newsletter*/
     #tab4 input[type=text],

@@ -1106,8 +1106,6 @@ body {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	height: 32px;
-	border-bottom: 1px solid #666965;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -1153,29 +1151,33 @@ body {
 }
 
 .tabs li.active {
-	background-color: #8dc440;
 	color: #fff;
 }
 
 .tabs :first-child {
 	background-image: url("../img/donate.png");
+	background-color: #8dc440;
 }
 
 .tabs :nth-child(2) {
 	background-image: url("../img/volunteer.png");
+	background-color: #464646;
 }
 
 .tabs :nth-child(3) {
 	background-image: url("../img/shop.png");
+	background-color: #1b7a94;
 }
 
 .tabs :nth-child(4) {
 	background-image: url("../img/subscribe.png");
+	background-color: #706e6e;
 }
 
 .tabs :nth-child(5) {
 	background-image: url("../img/seek-help.png");
 	border-right: none;
+	background-color: #117328;
 }
 
 /* tab content container */
@@ -1214,7 +1216,6 @@ body {
 }
 
 .tab_container .tab_content h2 {
-	padding-top: 120px;
 	font-size: 2em;
 	padding-bottom: 29px;
 	color: #fff;
@@ -1223,6 +1224,7 @@ body {
 @media screen and (max-width: 481px) {
 	.tab_container .tab_content h2 {
 		color: #606060;
+		padding-top: 70px;
 	}
 }
 
@@ -1379,7 +1381,7 @@ body {
 }
 
 /* when mobile, stack tabs up and down, hide left to right*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
 	/* hide horizontal tabs*/
 	.tabs {
 		display: none;
