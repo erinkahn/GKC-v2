@@ -1,3 +1,57 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -30,7 +84,7 @@ body {
 	.hero {
 		background-image: url("../img/heroHomeMobile.jpg");
 		width: 100%;
-		height: 80vw;
+		height: 90vw;
 	}
 }
 
@@ -135,7 +189,7 @@ body {
 
 .hero nav .donate {
 	position: fixed;
-	right: 8px;
+	right: 0px;
 	z-index: 4;
 	color: #fff;
 	text-transform: uppercase;
@@ -328,7 +382,7 @@ body {
 
 .top .about h1 {
 	font-size: 2em;
-	margin-bottom: 0;
+	margin-bottom: 10px;
 	color: #606060;
 	letter-spacing: 0.04em;
 }
@@ -341,6 +395,7 @@ body {
 
 .top .about p {
 	line-height: 1.6em;
+	padding-bottom: 20px;
 }
 
 @media screen and (min-width: 1366px) {
@@ -366,6 +421,10 @@ body {
 		padding-bottom: 4%;
 		padding: 0 20px;
 	}
+}
+
+.top .stories h2 {
+	padding: 20px 0;
 }
 
 .top .stories div {
@@ -420,6 +479,13 @@ body {
 	}
 }
 
+.top .events h2 {
+	color: #fff;
+	text-align: center;
+	padding: 20px 0 0 0;
+	letter-spacing: 0.03em;
+}
+
 .top .events span {
 	display: flex;
 	flex-direction: row;
@@ -447,7 +513,7 @@ body {
 }
 
 .top .events span .eventTitle {
-	margin-top: 12px;
+	margin-top: 29px;
 	align-self: center;
 	text-align: left;
 }
@@ -462,6 +528,7 @@ body {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 1.1em;
+	padding-bottom: 10px;
 }
 
 .top .events span .eventTitle p:last-child {
@@ -490,6 +557,10 @@ body {
 	margin: 0 auto;
 	flex-direction: column;
 	margin-bottom: 10%;
+}
+
+.waysToServe h2 {
+	padding-bottom: 20px;
 }
 
 .waysToServe .serve {
@@ -604,6 +675,7 @@ body {
 	transform: translateX(-50%);
 	width: 95%;
 	font-size: 1.4em;
+	margin-top: 30px;
 }
 
 @media screen and (min-width: 900px) {
@@ -1047,7 +1119,7 @@ body {
 @media screen and (max-width: 547px) {
 	.sponsors {
 		width: 90%;
-		padding-top: 10%;
+		padding-top: 19%;
 		padding-bottom: 19%;
 	}
 }
@@ -1085,6 +1157,7 @@ body {
 
 .sponsors h2 {
 	text-align: center;
+	padding-bottom: 20px;
 }
 
 .sponsors .logos {
@@ -1225,6 +1298,7 @@ body {
 
 .tab_container .tab_content h2 {
 	font-size: 2em;
+	padding-top: 30px;
 	padding-bottom: 29px;
 	color: #fff;
 }
@@ -1232,7 +1306,7 @@ body {
 @media screen and (max-width: 481px) {
 	.tab_container .tab_content h2 {
 		color: #606060;
-		padding-top: 70px;
+		padding-top: 100px;
 	}
 }
 
@@ -1301,6 +1375,7 @@ body {
 }
 
 .button-tabs a {
+	padding: 20px;
 	text-decoration: none;
 	color: #fff;
 	/* button h1 */
