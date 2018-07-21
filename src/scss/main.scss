@@ -1246,3 +1246,82 @@ body {
     }
 
 }
+
+// footer -------------------------------------------------
+
+
+footer{
+	@media screen and (max-width: 767px){
+		background-image: url('../img/footerMobile.png');
+		height: 90vh;
+		margin-bottom: 0%;
+		background-position: center;
+	}
+	background-image: url('../img/footer.png');
+	width: 100%;
+	height: 0;
+	padding-bottom: 40%;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.footer-container{
+		padding: 10%;
+		display: flex;
+		justify-content: center;
+		margin: 0% auto;
+		text-align: center;
+		
+		@media screen and (max-width: 767px){
+			flex-direction: column;
+			width: 80%;
+		}
+		flex-direction: row;
+
+		p, h3{
+			color: #fff;
+			text-shadow: 2px 2px #000;
+		}
+
+		h3{
+			font-size: 1.4em;
+			letter-spacing: 0.06em;
+			padding-bottom: 10px;
+		}
+
+		p{
+			line-height: 1.4em;
+		}
+
+		.call-hours{
+			@media screen and (max-width: 767px){
+				margin: 17% 0;
+			}
+		}
+
+		.location{
+			
+			p:nth-child(4){
+				padding-bottom: 20px;
+			}
+			.social{
+
+			}
+
+		}
+
+		.email{
+			@media screen and (max-width: 767px){
+				margin-top: 17%;
+			}
+			
+			p{
+				 &:nth-child(4), &:nth-child(6){
+					margin-top: 20px;
+				}
+				
+			}
+		}
+
+	}
+	
+}
