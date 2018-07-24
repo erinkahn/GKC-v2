@@ -94,20 +94,38 @@ body {
 				// the LI is inside the UL
 				&:hover {
 					> ul {
-						display: block; // hover over parent item, show child list
+						display: inline-block; // hover over parent item, show child list
 					}
 				}
 
 				> ul { // second level navigation list
 					display: none; // hidden by default
+					position: absolute;
 
 					> li { // second level navigation items
 						transition: .2s ease-in;
-						display: inline-block;
-						position: absolute;
-						top: 70px;
+						display: flex;
+						position: relative;
+						flex-direction: column;
 						text-align: center;
-						margin: 0 auto;
+						&:first-child{
+							margin-top: 14px;
+							border-bottom: 1px solid #fff;
+						}
+						&:nth-child(2){
+							border-bottom: 1px solid #fff;
+						}
+
+						a{
+							position: relative;
+							background-color: #6aab35;
+							padding: 12px 8px;
+
+							&:hover{
+								background-color: #000;
+								color: #fff;
+							}
+						}
 						
 					}
 				}

@@ -157,20 +157,40 @@ body {
 }
 
 .hero nav > ul > li:hover > ul {
-	display: block;
+	display: inline-block;
 }
 
 .hero nav > ul > li > ul {
 	display: none;
+	position: absolute;
 }
 
 .hero nav > ul > li > ul > li {
 	transition: .2s ease-in;
-	display: inline-block;
-	position: absolute;
-	top: 70px;
+	display: flex;
+	position: relative;
+	flex-direction: column;
 	text-align: center;
-	margin: 0 auto;
+}
+
+.hero nav > ul > li > ul > li:first-child {
+	margin-top: 14px;
+	border-bottom: 1px solid #fff;
+}
+
+.hero nav > ul > li > ul > li:nth-child(2) {
+	border-bottom: 1px solid #fff;
+}
+
+.hero nav > ul > li > ul > li a {
+	position: relative;
+	background-color: #6aab35;
+	padding: 12px 8px;
+}
+
+.hero nav > ul > li > ul > li a:hover {
+	background-color: #000;
+	color: #fff;
 }
 
 .hero nav > ul > li a {
