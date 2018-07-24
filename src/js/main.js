@@ -88,3 +88,29 @@ navDropdowns.forEach(function(navDropdown) {
         // two options here, pick the one that makes sense to you
     })
 })
+
+
+
+// ways to serve-----------------------------------------------------
+
+let dot1 = document.querySelector('.one');
+let dot2 = document.querySelector('.two');
+let dot3 = document.querySelector('.three');
+
+// when the user clicks the dot, show and hide the text
+
+dot1.addEventListener('click', function() {
+    document.querySelector('.expandText').classList.toggle('showText');
+})
+
+dot2.addEventListener('click', function() {
+    document.querySelector('.expandText2').classList.toggle('showText2');
+})
+
+dot3.addEventListener('click', function() {
+    document.querySelector('.expandText3').classList.toggle('showText3');
+})
+    
+
+
+
