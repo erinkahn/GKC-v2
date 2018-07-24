@@ -127,7 +127,7 @@ body {
 	display: flex;
 }
 
-.hero nav ul {
+.hero nav > ul {
 	width: 100%;
 	margin: 0 auto;
 	background-color: rgba(0, 0, 0, 0.582);
@@ -136,32 +136,44 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-	.hero nav ul {
+	.hero nav > ul {
 		padding: 12px 0;
 	}
 }
 
-.hero nav ul li {
+@media screen and (min-width: 768px) {
+	.hero nav > ul {
+		padding-left: 30px;
+	}
+}
+
+.hero nav > ul > li {
 	transition: .2s ease-in;
 	display: inline-block;
 }
 
-.hero nav ul li:first-child {
-	margin-left: 50px;
-}
-
-@media screen and (max-width: 767px) {
-	.hero nav ul li:first-child {
-		text-align: center;
-		margin-left: 0px;
-	}
-}
-
-.hero nav ul li:hover {
+.hero nav > ul > li:hover {
 	transform: translateY(-3px);
 }
 
-.hero nav ul li a {
+.hero nav > ul > li:hover > ul {
+	display: block;
+}
+
+.hero nav > ul > li > ul {
+	display: none;
+}
+
+.hero nav > ul > li > ul > li {
+	transition: .2s ease-in;
+	display: inline-block;
+	position: absolute;
+	top: 70px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.hero nav > ul > li a {
 	color: #fff;
 	text-transform: uppercase;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -171,25 +183,25 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-	.hero nav ul li a {
+	.hero nav > ul > li a {
 		font-size: 0.9em;
-		padding: 0 17px;
+		padding: 0 16px;
 	}
 }
 
 @media screen and (min-width: 481px) {
-	.hero nav ul li a {
+	.hero nav > ul > li a {
 		padding: 0 15px;
 	}
 }
 
 @media screen and (min-width: 768px) {
-	.hero nav ul li a {
+	.hero nav > ul > li a {
 		padding-right: 45px;
 	}
 }
 
-.hero nav ul li a:hover {
+.hero nav > ul > li a:hover {
 	cursor: pointer;
 	color: #6aab35;
 }
@@ -207,9 +219,10 @@ body {
 	padding: 13px 18px;
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 499px) {
 	.hero nav .donate {
-		display: none;
+		top: 40px;
+		font-size: 0.9em;
 	}
 }
 

@@ -65,35 +65,58 @@ body {
 
 	nav{
 		display: flex;
-
-		ul{
+		
+		> ul{ // top level navigation list
 			@media screen and (max-width: 767px){
 				padding: 12px 0;
+			}
+			@media screen and (min-width: 768px){
+				padding-left: 30px;
 			}
 			width: 100%;
 			margin: 0 auto;
 			background-color: rgba(0, 0, 0, 0.582);
 			padding: 12px 0;
 			top: 0;
+			
 
-			li{
+			> li{ // top level navigation items
 				transition: .2s ease-in;
 				display: inline-block;
-				&:first-child{
-					@media screen and (max-width: 767px){
-						text-align: center;
-						margin-left: 0px;
-					}
-					margin-left: 50px;
-				}
 				&:hover{
 					transform: translateY(-3px);
 				}
 
+				// drop down ------------------------------------------------------------------------
+				//so when you hover over the 1st level LI, 
+				// and the UL appears, and you move the mouse to the UL, 
+				// you’re still technically hovering over the LI, since 
+				// the LI is inside the UL
+				&:hover {
+					> ul {
+						display: block; // hover over parent item, show child list
+					}
+				}
+
+				> ul { // second level navigation list
+					display: none; // hidden by default
+
+					> li { // second level navigation items
+						transition: .2s ease-in;
+						display: inline-block;
+						position: absolute;
+						top: 70px;
+						text-align: center;
+						margin: 0 auto;
+						
+					}
+				}
+			
+
 				a{
 					@media screen and (max-width: 480px){
 						font-size: 0.9em;
-						padding: 0 17px;
+						padding: 0 16px;
 					}
 					@media screen and (min-width: 481px){
 						padding: 0 15px;
@@ -114,11 +137,14 @@ body {
 					}
 				}
 			}
+
+			
 		}
 
 		.donate{
-			@media screen and (max-width: 490px){
-				display: none;
+			@media screen and (max-width: 499px){
+				top: 40px;
+				font-size: 0.9em;
 			}
 			position: fixed;
 			right: 0px;
@@ -140,100 +166,6 @@ body {
 	}
 }
 
-// .burger{
-// 	z-index: 2;
-
-// 	a{
-// 		background-color: rgba(0, 0, 0, 0.682);
-// 		position: absolute;
-// 		padding: 2px;
-// 		left: 12px;
-// 		top: 10px;
-// 		color: #fff;
-// 		text-decoration: none;
-// 		font-size: 1.2em;
-// 		transition: .2s ease-in-out;
-
-// 		&:hover{
-// 			background-color: #000;
-// 			padding: 8px 8px;
-// 		}
-		
-// 	}
-// 	@media screen and (min-width: 768px){
-// 		display: none;
-// 	}
-
-// 	&.x{
-		
-// 		a{
-// 			visibility: hidden;
-			
-// 			&::after{
-// 				position: absolute;
-// 				visibility: visible;
-// 				display: flex;
-// 				content: " x ";
-// 				background-color: rgba(0, 0, 0, 0.682);
-// 				color: #fff;
-// 				font-weight: bold;
-// 				justify-content: center;
-// 				padding: 8px 19px;
-// 				font-size: 1.3em;
-// 				margin-top: -20px;
-// 			}
-
-// 		}
-// 	}
-
-// }
-
-
-// //show menu when u click menu
-// .mobileNav{
-// 	display: none;
-// 	transition: .2s ease;
-
-// 	&.openNav{
-
-// 		@media screen and (min-width: 768px){
-// 			display: none;
-// 		}
-// 		display: flex;
-// 		justify-content: center;
-// 		background-color: #6aab35;
-// 		padding: 18px 0;
-// 		margin: 0 auto;
-		
-// 		li{
-// 			transition: .2s ease-in;
-// 			text-align: center;
-// 			text-decoration: none;
-// 			text-transform: uppercase;
-// 			list-style: none;
-// 			&:hover{
-// 				transform: translateY(-3px);
-// 			}
-
-// 			a{
-// 				padding: 20px;
-// 				color: #fff;
-// 				text-decoration: none;
-// 				transition: .2s ease-in-out;
-
-// 				&:hover{
-// 					color: #000;
-// 					font-weight: bold;
-// 					@media screen and (max-width: 430px){
-// 						font-size: 1em;
-// 					}
-// 					font-size: 1.1em;
-// 				}
-// 			}
-// 		}
-// 	}
-		
-// }
 
 
 .top{

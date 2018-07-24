@@ -2,16 +2,7 @@
 
 console.log("Hello World from app.js! \nChange this message, and make sure it changes in the browser \nto verify that you're working in the right files.");
 
-// nav menu mobile
-
-// document.querySelector('.burger').addEventListener('click', function() {
-//     document.querySelector('.mobileNav').classList.toggle('openNav');
-//     document.querySelector('.donate').classList.toggle('hide');
-//     document.querySelector('.burger').classList.toggle('x');
-// })
-
-
-// tabs
+// tabs------------------------------------------------------------------------------
 // http://www.entheosweb.com/tutorials/css/tabs.asp
 
 $(".tab_content").hide(); // hide the rest of the tabs
@@ -64,4 +55,24 @@ $(".tab_drawer_heading").click(function () {
 
 /* Extra class "tab_last" to add border to right side of last tab */
 $('ul.tabs li').last().addClass("tab_last");
+
+// click option for dropdown instead of hover-----------------------------------------------------
+
+// find all the dropdowns (the second level nav ULs)
+var navDropdowns = document.querySelectorAll('nav > ul > li > ul');
+
+// loop through them
+navDropdowns.forEach(function (navDropdown) {
+    // get the parent of the dropdown in question, which is the top level LI it's inside
+    // add a click listener
+    navDropdown.parentNode.addEventListener("click", function () {
+        // when the parent LI is clicked, toggle a class on this dropdown UL
+        navDropdown.classList.toggle("show"); // need to add CSS for this class to nav > ul > li > ul
+        // OR
+        // when the parent LI is clicked, toggle a class on the parent LI
+        // this.classList.toggle("show"); // need to add CSS for this class to nav > ul > li > ul
+
+        // two options here, pick the one that makes sense to you
+    });
+});
 //# sourceMappingURL=main.js.map
