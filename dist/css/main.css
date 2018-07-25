@@ -73,16 +73,84 @@ body {
 
 .hero {
 	position: relative;
-	background-image: url("../img/heroHome.jpg");
 	background-repeat: no-repeat;
 	height: 0;
 	background-size: contain;
 	width: 100%;
 }
 
+.hero.homePage {
+	background-image: url("../img/heroHome.jpg");
+}
+
+@media screen and (max-width: 899px) {
+	.hero.homePage {
+		background-image: url("../img/heroHomeMobile.jpg");
+	}
+}
+
+.hero.storiesPage {
+	background-image: url("../img/storiesHero.jpg");
+}
+
+@media screen and (max-width: 899px) {
+	.hero.storiesPage {
+		background-image: url("../img/storiesHeroMobile.jpg");
+	}
+}
+
+.hero.donatePage {
+	background-image: url("../img/donateHero.jpg");
+}
+
+@media screen and (max-width: 899px) {
+	.hero.donatePage {
+		background-image: url("../img/donateHeroMobile.jpg");
+	}
+}
+
+.hero.servePage {
+	background-image: url("../img/serveHero.jpg");
+}
+
+@media screen and (max-width: 899px) {
+	.hero.servePage {
+		background-image: url("../img/serveHeroMobile.jpg");
+	}
+}
+
+.hero.servePage, .hero.storiesPage, .hero.donatePage {
+	transition: .2s ease;
+}
+
+.hero.servePage .logoMark, .hero.storiesPage .logoMark, .hero.donatePage .logoMark {
+	display: block;
+	width: 10%;
+	max-width: 85px;
+	position: relative;
+}
+
+@media screen and (max-width: 767px) {
+	.hero.servePage .logoMark, .hero.storiesPage .logoMark, .hero.donatePage .logoMark {
+		display: none;
+	}
+}
+
+.hero.servePage .logoMark img, .hero.storiesPage .logoMark img, .hero.donatePage .logoMark img {
+	transition: .2s ease;
+	position: absolute;
+	left: 10px;
+	top: -39px;
+}
+
+@media screen and (min-width: 1024px) {
+	.hero.servePage .logoMark img, .hero.storiesPage .logoMark img, .hero.donatePage .logoMark img {
+		left: 45px;
+	}
+}
+
 @media screen and (max-width: 899px) {
 	.hero {
-		background-image: url("../img/heroHomeMobile.jpg");
 		width: 100%;
 		height: 90vw;
 	}
@@ -128,10 +196,11 @@ body {
 }
 
 .hero nav > ul {
+	transition: .2s ease-in-out;
 	width: 100%;
 	margin: 0 auto;
 	background-color: rgba(0, 0, 0, 0.582);
-	padding: 12px 0;
+	padding: 18px 0;
 	top: 0;
 }
 
@@ -144,6 +213,15 @@ body {
 @media screen and (min-width: 768px) {
 	.hero nav > ul {
 		padding-left: 30px;
+	}
+	.hero nav > ul.notHome {
+		padding-left: 120px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.hero nav > ul.notHome {
+		padding-left: 160px;
 	}
 }
 
@@ -180,6 +258,16 @@ body {
 
 .hero nav > ul > li > ul > li:nth-child(2) {
 	border-bottom: 1px solid #fff;
+}
+
+.hero nav > ul > li > ul > li.border {
+	border-bottom: 1px solid #fff;
+}
+
+@media screen and (min-width: 768px) {
+	.hero nav > ul > li > ul > li.home {
+		display: none;
+	}
 }
 
 .hero nav > ul > li > ul > li a {
@@ -631,10 +719,11 @@ body {
 
 .expandText, .expandText2, .expandText3 {
 	display: none;
+	position: relative;
 }
 
 .expandText.showText, .expandText.showText2, .expandText.showText3, .expandText2.showText, .expandText2.showText2, .expandText2.showText3, .expandText3.showText, .expandText3.showText2, .expandText3.showText3 {
-	display: flex;
+	display: block;
 	position: relative;
 }
 
@@ -642,8 +731,8 @@ body {
 	position: absolute;
 	z-index: 3;
 	color: #fff;
-	padding: 34px;
 	line-height: 2em;
+	padding: 30px 35px;
 	background-color: rgba(0, 0, 0, 0.882);
 }
 
@@ -1514,12 +1603,13 @@ footer {
 		justify-content: center;
 		width: 80%;
 		margin: 0 auto;
+		padding: 30px 0;
 	}
 }
 
 @media screen and (min-width: 861px) {
 	footer .footer-container {
-		padding: 30px 0;
+		padding: 60px 0;
 		display: flex;
 		margin: 0% auto;
 		justify-content: space-between;
@@ -1528,15 +1618,24 @@ footer {
 	}
 }
 
+@media screen and (min-width: 1024px) {
+	footer .footer-container {
+		width: 75%;
+		padding: 65px 0;
+	}
+}
+
 @media screen and (min-width: 1224px) {
 	footer .footer-container {
-		width: 90%;
+		width: 70%;
+		padding: 70px 0;
 	}
 }
 
 @media screen and (min-width: 1440px) {
 	footer .footer-container {
-		width: 80%;
+		width: 60%;
+		padding: 80px 0;
 	}
 }
 
@@ -1558,12 +1657,6 @@ footer .footer-container p {
 @media screen and (max-width: 860px) {
 	footer .footer-container .call-hours {
 		padding: 70px 0;
-	}
-}
-
-@media screen and (max-width: 860px) {
-	footer .footer-container .location {
-		margin-top: 20px;
 	}
 }
 

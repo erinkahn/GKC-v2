@@ -15,45 +15,37 @@
 	</head>
 	<body>
 
-		<!-- <ul class="mobileNav">
-			<li><a href="give.html">Give</a></li>
-			<li><a href="stories.html">Stories</a></li>
-			<li><a href="efforts.html">Efforts</a></li>
-			<li><a href="events.html">Events</a></li>
-		</ul> -->
-		
-		<div class="hero">
-
-			<!-- <div class="burger">
-				<a href="javascript:;">Menu</a>
-			</div> -->
+		<div class="hero storiesPage">
 
 			<nav>
-				<ul>
-					<li><a href="give.html">Give</a></li>
-					<li><a href="stories.html">Stories</a></li>
-					<li><a href="efforts.html">Efforts</a></li>
-					<li><a href="events.html">Events</a></li>
+				<ul class="notHome"> <!-- top level navigation list --> 
+					<li> <!--top level navigation item-->
+						<a href="javascript:;">Give</a>
+						<ul class="dropdown-content"> <!-- second level navigation list -->
+							<li class="home"><a href="index.html">Home</a></li>
+							<li><a href="serve.html">Serve</a></li><!-- second level navigation item-->
+							<li class="border"><a href="donate.html">Donate</a></li><!-- second level navigation item-->
+							<li><a href="">Etsy</a></li><!-- second level navigation item-->
+						</ul>
+					</li>
+					<li><a href="stories.html">Stories</a></li><!-- top level naviation item -->
+					<li><a href="efforts.html">Efforts</a></li><!-- top level naviation item -->
+					<li><a href="events.html">Events</a></li><!-- top level naviation item -->
 				</ul>
+
+				<!-- that might be a UX problem. It's a really important button. revisit that later. -->
 				<a class="donate" href="donate.html">Donate</a>
 
 			</nav>
 
-			<div class="homeLogo">
-				<img src="dist/img/whiteLogo.svg" alt="logo">
-				<img src="dist/img/whiteLogoMobile.svg" alt="logo">
+			<div class="logoMark">
+				<a href="index.html"><img src="dist/img/logomark.svg" alt="logo"></a>
 			</div>
 
 		</div>
 
 
 		<section class="top">
-
-			<div class="about">
-				<h1>About GKC</h1>
-				<p>Based in Birmingham, Alabama, Grace Klein Community is a 501(c)3 non-profit that focuses on changing the world by teaching people how to truly share with one another. </p>
-				<p>We strive to build close relationships that mean something and that can encourage and spur people on to be better. </p>
-			</div>
 
 			<div class="stories">
 				<h2>Stories</h2>
@@ -65,118 +57,10 @@
 				<a href="stories.html">Read more</a>
 			</div>
 
-			<div class="events">
-				<h2>Events</h2>
-				<span>
-					<div class="box">
-						<p>July</p>
-						<p>27</p>
-					</div>
-					<div class="eventTitle">
-						<p>Camp Weekend</p>
-						<p>5pm Smith Lake</p>
-					</div>
-				</span>
-				<span>
-					<div class="box">
-						<p>July</p>
-						<p>28</p>
-					</div>
-					<div class="eventTitle">
-						<p>Prayer Brunch</p>
-						<p>11am Waffle House</p>
-					</div>
-				</span>
-				<span>
-					<div class="box">
-						<p>Aug</p>
-						<p>3</p>
-					</div>
-					<div class="eventTitle">
-						<p>Food Delivery</p>
-						<p>12pm GKC Home</p>
-					</div>
-				</span>
-				<span>
-					<div class="box">
-						<p>Aug</p>
-						<p>4</p>
-					</div>
-					<div class="eventTitle">
-						<p>Bible Study</p>
-						<p>11am Rocky Ridge</p>
-					</div>
-				</span>
-			
-				<a href="events.html">View all events</a>
-			</div>
 		</section>
 
 
-		<section class="waysToServe">
-			<h2>Ways We Serve</h2>
-
-			<div class="serve">
-				<div class="giveTake">
-					<h3>Give and Take Room</h3>
-					<div class="dot">
-						<span class="dot1">+</span>
-					</div>
-				</div>
-
-				<div class="deliver">
-					<h3>Food Delivery</h3>
-					<div class="dot">
-						<span class="dot2">+</span>
-					</div>
-				</div>
-
-				<div class="meals">
-					<h3>Homecooked Meals</h3>
-					<div class="dot">
-						<span class="dot3">+</span>
-					</div>
-				</div>
-			</div>	
-		</section>
-
-
-		<section class="mission-vision-purpose">
-
-			<div class="mission">
-				<div>
-					<h2>Our Mission</h2>
-					<p>is to create authentic community (Koinonia) by uniting diverse individuals, businesses, ministries, and churches to work together by sharing what they have in order to meet physical and spiritual needs both locally and globally. </p>
-				</div>
-			</div>
-
-			<div class="vision">
-				<div>
-					<h2>Our Vision</h2>
-					<p>is to show people that they are deeply valued and that we all have something to give.</p>
-				</div>
-			</div>
-
-			<div class="purpose">
-				<div>
-					<h2>Our Purpose</h2>
-					<p>is to demonstrate the love of Christ.</p>
-				</div>
-			</div>
-
-		</section>
-
-
-		<section class="sponsors">
-
-			<h2>Our Top Sponsors</h2>
-
-			<div class="logos">
-	
-			</div>
-			
-		</section>
-
+		
 
 		<!-- tabs -->
 		<section class="tabs-section-container">
