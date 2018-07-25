@@ -631,10 +631,11 @@ body {
 
 .expandText, .expandText2, .expandText3 {
 	display: none;
+	position: relative;
 }
 
 .expandText.showText, .expandText.showText2, .expandText.showText3, .expandText2.showText, .expandText2.showText2, .expandText2.showText3, .expandText3.showText, .expandText3.showText2, .expandText3.showText3 {
-	display: flex;
+	display: block;
 	position: relative;
 }
 
@@ -642,8 +643,8 @@ body {
 	position: absolute;
 	z-index: 3;
 	color: #fff;
-	padding: 34px;
 	line-height: 2em;
+	padding: 30px 35px;
 	background-color: rgba(0, 0, 0, 0.882);
 }
 
@@ -1514,12 +1515,13 @@ footer {
 		justify-content: center;
 		width: 80%;
 		margin: 0 auto;
+		padding: 30px 0;
 	}
 }
 
 @media screen and (min-width: 861px) {
 	footer .footer-container {
-		padding: 30px 0;
+		padding: 60px 0;
 		display: flex;
 		margin: 0% auto;
 		justify-content: space-between;
@@ -1528,15 +1530,24 @@ footer {
 	}
 }
 
+@media screen and (min-width: 1024px) {
+	footer .footer-container {
+		width: 75%;
+		padding: 65px 0;
+	}
+}
+
 @media screen and (min-width: 1224px) {
 	footer .footer-container {
-		width: 90%;
+		width: 70%;
+		padding: 70px 0;
 	}
 }
 
 @media screen and (min-width: 1440px) {
 	footer .footer-container {
-		width: 80%;
+		width: 60%;
+		padding: 80px 0;
 	}
 }
 
@@ -1558,12 +1569,6 @@ footer .footer-container p {
 @media screen and (max-width: 860px) {
 	footer .footer-container .call-hours {
 		padding: 70px 0;
-	}
-}
-
-@media screen and (max-width: 860px) {
-	footer .footer-container .location {
-		margin-top: 20px;
 	}
 }
 

@@ -504,21 +504,22 @@ body {
 // hide and show text when you click dot
 .expandText, .expandText2, .expandText3{
 	display: none;
+	position: relative;
 	
 
 	&.showText, &.showText2, &.showText3{
-		display: flex;
+		display: block;
 		position: relative;
+
 		p{
+			
 			position: absolute;
 			z-index: 3;
 			color: #fff;
-			padding: 34px;
 			line-height: 2em;
+			padding: 30px 35px;
 			background-color: rgba(0, 0, 0, 0.882);
 		}
-
-
 	}
 }
 
@@ -1258,20 +1259,28 @@ footer{
 			justify-content: center;
 			width: 80%;
 			margin: 0 auto;
+			padding: 30px 0;
 		}
 		@media screen and (min-width: 861px){
-			padding: 30px 0;
+			padding: 60px 0;
 			display: flex;
 			margin: 0% auto;
 			justify-content: space-between;
 			flex-direction: row;
 			width: 84%;
 		}	
+		@media screen and (min-width: 1024px){
+			width: 75%;
+			padding: 65px 0;
+		}
 		@media screen and (min-width: 1224px){
-			width: 90%;
+			width: 70%;
+			padding: 70px 0;
 		}
 		@media screen and (min-width: 1440px){
-			width: 80%;
+			width: 60%;
+			padding: 80px 0;
+			
 		}
 
 		p, h3{
@@ -1291,16 +1300,8 @@ footer{
 
 		.call-hours{
 			@media screen and (max-width: 860px){
-				// margin-bottom: 80px;
 				padding: 70px 0;
 			}
-		}
-
-		.location{
-			@media screen and (max-width: 860px){
-				margin-top: 20px;
-			}
-
 		}
 
 		.email{
