@@ -361,6 +361,74 @@ body {
 	}
 }
 
+.quote {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin: 9% 10% 0 55%;
+	width: 40%;
+	max-width: 400px;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 900px) {
+	.quote {
+		display: none;
+	}
+}
+
+.quote p {
+	color: #fff;
+	line-height: 1.4em;
+}
+
+.quote p:first-child {
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 1224px) {
+	.quote p:first-child {
+		font-size: 2.3em;
+	}
+}
+
+.quote p:last-child {
+	font-size: 1.1em;
+	white-space: nowrap;
+}
+
+@media screen and (min-width: 1224px) {
+	.quote p:last-child {
+		font-size: 1.3em;
+	}
+}
+
+.quote h2 {
+	font-weight: bold;
+	font-family: 'Source Sans Pro', sans-serif;
+	white-space: nowrap;
+	position: absolute;
+	top: 240px;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+	font-size: 2.3em;
+	letter-spacing: 0.06em;
+}
+
+@media screen and (min-width: 1224px) {
+	.quote h2 {
+		top: 320px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.quote h2 {
+		top: 380px;
+		font-size: 3em;
+	}
+}
+
 .top {
 	display: flex;
 	margin: 0% auto;
@@ -1691,6 +1759,101 @@ footer .footer-container p {
 
 footer .footer-container .email p:nth-child(4), footer .footer-container .email p:nth-child(6) {
 	margin-top: 20px;
+}
+
+.serveSection {
+	display: flex;
+	justify-content: center;
+	margin: 10% auto;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+	.serveSection {
+		flex-direction: row;
+		display: flex;
+	}
+}
+
+.serveSection .sign-up {
+	margin: 0 auto;
+	border: 2px solid #000;
+}
+
+@media screen and (min-width: 1024px) {
+	.serveSection .sign-up {
+		flex-direction: row;
+		display: flex;
+	}
+}
+
+.serveSection .sign-up img {
+	max-width: 350px;
+}
+
+@media screen and (min-width: 768px) {
+	.serveSection .sign-up img {
+		max-width: 500px;
+	}
+}
+
+.serveSection .sign-up div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10% 0;
+}
+
+@media screen and (min-width: 768px) {
+	.serveSection .sign-up div {
+		padding: 10% 9%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.serveSection .sign-up div {
+		padding: 10% 12%;
+	}
+}
+
+.serveSection .sign-up div h3 {
+	font-size: 1.7em;
+	padding-bottom: 8%;
+	white-space: nowrap;
+}
+
+.serveSection .sign-up div input {
+	padding: 10px 30px;
+	text-align: left;
+	margin: 10px 0;
+}
+
+@media screen and (min-width: 1024px) {
+	.serveSection .sign-up div input {
+		padding: 12px 40px;
+	}
+}
+
+.serveSection .sign-up div a {
+	white-space: nowrap;
+	text-decoration: none;
+	border: 1px solid #000;
+	justify-content: center;
+	padding: 4% 7%;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.serveSection .sign-up div a:hover {
+	background-color: #65aa05;
+	color: #fff;
+	border: none;
+}
+
+@media screen and (min-width: 1024px) {
+	.serveSection .sign-up div a {
+		padding: 10% 19%;
+	}
 }
 
 /*# sourceMappingURL=main.css.map */
