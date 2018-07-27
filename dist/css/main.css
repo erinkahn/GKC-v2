@@ -101,12 +101,20 @@ body {
 }
 
 .hero.donatePage {
-	background-image: url("../img/donateHero.jpg");
+	z-index: -1;
+	height: 0vw;
+	padding-bottom: 30%;
 }
 
-@media screen and (max-width: 899px) {
+@media screen and (min-width: 768px) {
 	.hero.donatePage {
-		background-image: url("../img/donateHeroMobile.jpg");
+		padding-bottom: 20%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.hero.donatePage {
+		padding-bottom: 14%;
 	}
 }
 
@@ -406,8 +414,7 @@ body {
 }
 
 .quote h2 {
-	font-weight: bold;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	white-space: nowrap;
 	position: absolute;
 	top: 240px;
@@ -1956,6 +1963,12 @@ footer .footer-container .email a:hover {
 	width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+	.serveSection .waysServe img {
+		margin-top: 20px;
+	}
+}
+
 .serveSection .waysServe div {
 	margin-bottom: 10%;
 }
@@ -1989,6 +2002,65 @@ footer .footer-container .email a:hover {
 .serveSection .waysServe a:hover {
 	background-color: #65aa05;
 	color: #fff;
+}
+
+.contactForm {
+	margin: 0% auto;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	border: 2px solid #000;
+	background-color: #65aa05;
+	padding: 10%;
+	text-align: center;
+	white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+	.contactForm {
+		width: 70%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.contactForm {
+		width: 60%;
+	}
+}
+
+.contactForm h2 {
+	color: #fff;
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+.contactForm input {
+	border: 2px solid #fff;
+	margin: 10px 0;
+}
+
+.contactForm input[type=text] {
+	padding: 12px;
+}
+
+.contactForm a {
+	background-color: #000;
+	border-radius: 30px;
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 20px;
+	transition: .2s ease-in-out;
+}
+
+.contactForm a:hover {
+	border-radius: 0;
+}
+
+.footer-container.donate {
+	margin-top: 18%;
 }
 
 /*# sourceMappingURL=main.css.map */

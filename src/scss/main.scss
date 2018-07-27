@@ -37,10 +37,15 @@ body {
 	}
 
 	&.donatePage{
-		@media screen and (max-width: 899px){
-			background-image: url('../img/donateHeroMobile.jpg');
+		z-index: -1;
+		height: 0vw;
+		padding-bottom: 30%;
+		@media screen and (min-width: 768px){
+			padding-bottom: 20%
 		}
-		background-image: url('../img/donateHero.jpg');
+		@media screen and (min-width: 1024px){
+			padding-bottom: 14%
+		}
 	}
 
 	&.servePage{
@@ -317,8 +322,7 @@ body {
 	}
 
 	h2{
-		font-weight: bold;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: Georgia, 'Times New Roman', Times, serif;
 		white-space: nowrap;
 		position: absolute;
 		top: 240px;
@@ -1640,6 +1644,9 @@ footer{
 			margin-bottom: 20px;
 			margin-top: 50px;
 			width: 100%;
+			@media screen and (min-width: 768px){
+				margin-top: 20px;
+			}
 		}
 
 		
@@ -1671,4 +1678,58 @@ footer{
 			}
 		}
 	}
+}
+
+
+.contactForm{
+	margin: 0% auto;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	border: 2px solid #000;
+	background-color: #65aa05;
+	padding: 10%;
+	text-align: center;
+	white-space: nowrap;
+	@media screen and (min-width: 768px){
+		width: 70%;
+	}
+	@media screen and (min-width: 1024px){
+		width: 60%;
+	}
+
+	h2{
+		color: #fff;
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+
+	input{
+		border: 2px solid #fff;
+		margin: 10px 0;
+	}
+
+	input[type=text]{
+		padding: 12px; 
+	}
+
+	a{
+		background-color: #000;
+		border-radius: 30px;
+		padding: 10px;
+		color: #fff;
+		text-decoration: none;
+		margin-top: 20px;
+		transition: .2s ease-in-out;
+		&:hover{
+			border-radius: 0;
+		}
+	}
+
+}
+
+.footer-container.donate{
+	margin-top: 18%;
 }
