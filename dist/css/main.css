@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -1771,22 +1772,42 @@ footer .footer-container .email a:hover {
 .serveSection {
 	display: flex;
 	justify-content: center;
-	margin: 10% auto;
+	margin: 5% auto;
+	flex-direction: column;
+	width: 80%;
+	max-width: 455px;
+}
+
+@media screen and (min-width: 768px) {
+	.serveSection {
+		max-width: 755px;
+		margin: 0% auto;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.serveSection {
+		max-width: 855px;
+		margin: 6% auto;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.serveSection {
+		max-width: 865px;
+	}
 }
 
 .serveSection .sign-up {
 	margin: 0 auto;
-	width: 80%;
-	max-width: 455px;
-	margin-bottom: 10%;
+	width: 100%;
+	margin-bottom: 16%;
 	border: 2px solid #000;
 }
 
 @media screen and (min-width: 768px) {
 	.serveSection .sign-up {
-		width: 100%;
-		max-width: 455px;
-		margin-bottom: 6%;
+		margin-bottom: 10%;
 	}
 }
 
@@ -1794,16 +1815,6 @@ footer .footer-container .email a:hover {
 	.serveSection .sign-up {
 		flex-direction: row;
 		display: flex;
-		max-width: 700px;
-		margin-bottom: 0%;
-		margin-top: -60px;
-	}
-}
-
-@media screen and (min-width: 1224px) {
-	.serveSection .sign-up {
-		max-width: 850px;
-		margin-top: -80px;
 	}
 }
 
@@ -1834,9 +1845,21 @@ footer .footer-container .email a:hover {
 	white-space: nowrap;
 }
 
+@media screen and (min-width: 768px) {
+	.serveSection .sign-up div h3 {
+		padding: 2% 0 4% 0;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.serveSection .sign-up div h3 {
+		padding: 18% 0 4% 0;
+	}
+}
+
 @media screen and (min-width: 1224px) {
 	.serveSection .sign-up div h3 {
-		padding: 12% 0;
+		padding: 20% 0 4% 0;
 	}
 }
 
@@ -1879,6 +1902,93 @@ footer .footer-container .email a:hover {
 	background-color: #65aa05;
 	color: #fff;
 	border: none;
+}
+
+.serveSection .waysServe {
+	color: #606060;
+}
+
+.serveSection .waysServe h2 {
+	text-align: center;
+	margin-top: 8%;
+	margin-bottom: 6%;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.serveSection .waysServe h3 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 1.3em;
+	margin-bottom: 10px;
+}
+
+.serveSection .waysServe h4 {
+	margin-left: 10px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 1em;
+	margin-bottom: 5px;
+}
+
+.serveSection .waysServe p {
+	line-height: 1.4em;
+	padding-bottom: 17px;
+}
+
+.serveSection .waysServe ul {
+	margin-top: 20px;
+}
+
+.serveSection .waysServe ul li {
+	list-style-position: inside;
+	line-height: 1.6em;
+	margin-left: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.serveSection .waysServe ul li::before {
+	content: "•   ";
+	color: #69ad09;
+	font-size: 1.4em;
+}
+
+.serveSection .waysServe img {
+	margin-bottom: 20px;
+	margin-top: 50px;
+	width: 100%;
+}
+
+.serveSection .waysServe div {
+	margin-bottom: 10%;
+}
+
+@media screen and (min-width: 1024px) {
+	.serveSection .waysServe div {
+		margin-bottom: 7%;
+	}
+}
+
+.serveSection .waysServe a {
+	color: #65aa05;
+	justify-content: center;
+	margin: 0 auto;
+	display: flex;
+	transition: .2s ease-in-out;
+	font-weight: bold;
+	text-decoration: none;
+	border: 1px solid #65aa05;
+	padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+	.serveSection .waysServe a {
+		max-width: 255px;
+		width: 100%;
+		margin: 0;
+	}
+}
+
+.serveSection .waysServe a:hover {
+	background-color: #65aa05;
+	color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
