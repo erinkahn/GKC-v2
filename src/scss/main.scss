@@ -1451,21 +1451,43 @@ footer{
 
 		.call-hours{
 			@media screen and (max-width: 860px){
-				padding: 70px 0;
+				padding: 60px 0;
+			}
+
+			.social{
+				h3{
+					margin-top: 50px;
+				}
+				a, em{
+					color: #fff;
+					text-decoration: none;
+					padding: 0 4px;
+					font-size: 1.2em;
+					&:hover{
+						
+						color: #8dc440;
+					}
+
+				}
 			}
 		}
 
 		.email{
+			display: flex;
+			flex-direction: column;
 			@media screen and (max-width: 860px){
 				margin: 20px 0;
 				padding-bottom: 60px;
+				padding-top: 30px;
 			}
 			
-			p{
-				 &:nth-child(4), &:nth-child(6){
-					margin-top: 20px;
+			a{
+				color: #fff;
+				text-decoration: none;
+				padding: 10px 0;
+				&:hover{
+					color: #8dc440;
 				}
-				
 			}
 		}
 

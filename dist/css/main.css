@@ -1746,19 +1746,46 @@ footer .footer-container p {
 
 @media screen and (max-width: 860px) {
 	footer .footer-container .call-hours {
-		padding: 70px 0;
+		padding: 60px 0;
 	}
+}
+
+footer .footer-container .call-hours .social h3 {
+	margin-top: 50px;
+}
+
+footer .footer-container .call-hours .social a, footer .footer-container .call-hours .social em {
+	color: #fff;
+	text-decoration: none;
+	padding: 0 4px;
+	font-size: 1.2em;
+}
+
+footer .footer-container .call-hours .social a:hover, footer .footer-container .call-hours .social em:hover {
+	color: #8dc440;
+}
+
+footer .footer-container .email {
+	display: flex;
+	flex-direction: column;
 }
 
 @media screen and (max-width: 860px) {
 	footer .footer-container .email {
 		margin: 20px 0;
 		padding-bottom: 60px;
+		padding-top: 30px;
 	}
 }
 
-footer .footer-container .email p:nth-child(4), footer .footer-container .email p:nth-child(6) {
-	margin-top: 20px;
+footer .footer-container .email a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 0;
+}
+
+footer .footer-container .email a:hover {
+	color: #8dc440;
 }
 
 .serveSection {
