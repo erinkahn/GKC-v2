@@ -101,7 +101,6 @@ body {
 }
 
 .hero.donatePage {
-	z-index: -1;
 	height: 0vw;
 	padding-bottom: 30%;
 }
@@ -115,6 +114,12 @@ body {
 @media screen and (min-width: 1024px) {
 	.hero.donatePage {
 		padding-bottom: 14%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.hero.donatePage {
+		padding-bottom: 9%;
 	}
 }
 
@@ -2004,7 +2009,7 @@ footer .footer-container .email a:hover {
 	color: #fff;
 }
 
-.contactForm {
+.donateForm {
 	margin: 0% auto;
 	display: flex;
 	align-content: center;
@@ -2012,40 +2017,56 @@ footer .footer-container .email a:hover {
 	flex-direction: column;
 	width: 80%;
 	border: 2px solid #000;
-	background-color: #65aa05;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left;
+	background: linear-gradient(0deg, rgba(123, 183, 40, 0.78), rgba(141, 196, 64, 0.43)), url("../img/donateHero.jpg");
 	padding: 10%;
 	text-align: center;
 	white-space: nowrap;
 }
 
 @media screen and (min-width: 768px) {
-	.contactForm {
+	.donateForm {
 		width: 70%;
 	}
 }
 
 @media screen and (min-width: 1024px) {
-	.contactForm {
-		width: 60%;
+	.donateForm {
+		width: 55%;
 	}
 }
 
-.contactForm h2 {
-	color: #fff;
-	font-size: 2em;
+@media screen and (min-width: 1224px) {
+	.donateForm {
+		width: 50%;
+		padding: 7%;
+	}
+}
+
+.donateForm h2 {
+	color: #000;
+	text-shadow: 1px 1px #fff;
+	font-size: 3em;
 	margin-bottom: 20px;
 }
 
-.contactForm input {
+.donateForm input {
 	border: 2px solid #fff;
 	margin: 10px 0;
 }
 
-.contactForm input[type=text] {
+.donateForm input[type=text] {
 	padding: 12px;
 }
 
-.contactForm a {
+.donateForm input[type=text]::placeholder {
+	color: #000;
+	font-size: 1.2em;
+}
+
+.donateForm a {
 	background-color: #000;
 	border-radius: 30px;
 	padding: 10px;
@@ -2055,12 +2076,30 @@ footer .footer-container .email a:hover {
 	transition: .2s ease-in-out;
 }
 
-.contactForm a:hover {
+.donateForm a:hover {
 	border-radius: 0;
 }
 
 .footer-container.donate {
 	margin-top: 18%;
+}
+
+@media screen and (min-width: 768px) {
+	.footer-container.donate {
+		margin-top: 14%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.footer-container.donate {
+		margin-top: 10%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.footer-container.donate {
+		margin-top: 6%;
+	}
 }
 
 /*# sourceMappingURL=main.css.map */
