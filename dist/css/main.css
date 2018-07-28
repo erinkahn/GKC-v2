@@ -379,7 +379,7 @@ body {
 	position: relative;
 	display: flex;
 	justify-content: center;
-	margin: 9% 10% 0 55%;
+	margin: 9% 13% 0 55%;
 	width: 40%;
 	max-width: 400px;
 	flex-direction: column;
@@ -415,6 +415,22 @@ body {
 @media screen and (min-width: 1224px) {
 	.quote p:last-child {
 		font-size: 1.3em;
+	}
+}
+
+.quote.story {
+	right: 100px;
+}
+
+@media screen and (min-width: 1024px) {
+	.quote.story {
+		right: 20px;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.quote.story {
+		top: 80px;
 	}
 }
 
@@ -2099,6 +2115,98 @@ footer .footer-container .email a:hover {
 @media screen and (min-width: 1224px) {
 	.footer-container.donate {
 		margin-top: 6%;
+	}
+}
+
+.storyPageContainer {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin: 10% auto;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+	.storyPageContainer {
+		margin: 0 auto;
+	}
+}
+
+.storyPageContainer .ann h2 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.storyPageContainer .ann div {
+	display: flex;
+	margin: 8% auto;
+	width: 90%;
+	flex-direction: column;
+	max-width: 600px;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+	.storyPageContainer .ann div {
+		flex-direction: row;
+		width: 85%;
+		max-width: 900px;
+		margin: 4% auto;
+	}
+}
+
+.storyPageContainer .ann div img {
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+	.storyPageContainer .ann div img {
+		width: 70%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.storyPageContainer .ann div img {
+		width: 50%;
+	}
+}
+
+.storyPageContainer .ann div span {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+	.storyPageContainer .ann div span {
+		width: 70%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.storyPageContainer .ann div span {
+		padding-left: 30px;
+	}
+}
+
+.storyPageContainer .ann div span p {
+	line-height: 1.4em;
+	text-align: left;
+	padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+	.storyPageContainer .ann div span p {
+		line-height: 1.9em;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.storyPageContainer .ann div span span {
+		display: none;
 	}
 }
 
