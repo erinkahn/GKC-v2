@@ -162,6 +162,14 @@ body {
 				display: inline-block;
 				&:hover{
 					transform: translateY(-3px);
+					cursor: pointer;
+				}
+
+				&:nth-child(3) a, &:last-child a{
+					cursor: not-allowed;
+					&:hover{
+						cursor: not-allowed;
+					}
 				}
 
 				// drop down ------------------------------------------------------------------------
@@ -1522,7 +1530,7 @@ footer{
 		margin: 6% auto;
 	}
 	@media screen and (min-width: 1224px){
-		max-width: 865px;
+		max-width: 835px;
 	}
 
 	.sign-up{

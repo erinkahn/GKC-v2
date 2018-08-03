@@ -249,6 +249,15 @@ body {
 
 .hero nav > ul > li:hover {
 	transform: translateY(-3px);
+	cursor: pointer;
+}
+
+.hero nav > ul > li:nth-child(3) a, .hero nav > ul > li:last-child a {
+	cursor: not-allowed;
+}
+
+.hero nav > ul > li:nth-child(3) a:hover, .hero nav > ul > li:last-child a:hover {
+	cursor: not-allowed;
 }
 
 .hero nav > ul > li:hover > ul {
@@ -1822,7 +1831,7 @@ footer .footer-container .email a:hover {
 
 @media screen and (min-width: 1224px) {
 	.serveSection {
-		max-width: 865px;
+		max-width: 835px;
 	}
 }
 
