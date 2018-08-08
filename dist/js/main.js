@@ -1,6 +1,20 @@
-"use strict";
+'use strict';
 
-console.log("Hello World from app.js! \nChange this message, and make sure it changes in the browser \nto verify that you're working in the right files.");
+console.log('Hello World from app.js! \nChange this message, and make sure it changes in the browser \nto verify that you\'re working in the right files.');
+
+// waypoints - back to top
+
+var waypoint = new Waypoint({
+    element: document.querySelector('.top, .serveSection'),
+    handler: function handler(direction) {
+        console.log('Scrolled to waypoint!');
+        if (direction == 'down') {
+            document.querySelector('.backToTop .fas').style.color = '#65aa05';
+        } else {
+            document.querySelector('.backToTop .fas').style.color = 'transparent';
+        }
+    }
+});
 
 // tabs------------------------------------------------------------------------------
 // http://www.entheosweb.com/tutorials/css/tabs.asp
@@ -60,6 +74,7 @@ $('ul.tabs li').last().addClass("tab_last");
 
 // find all the dropdowns (the second level nav ULs)
 var navDropdowns = document.querySelectorAll('nav > ul > li > ul');
+var dropContainer = document.querySelector('.dropContainer');
 
 // loop through them
 navDropdowns.forEach(function (navDropdown) {
@@ -68,6 +83,7 @@ navDropdowns.forEach(function (navDropdown) {
     navDropdown.parentNode.addEventListener("click", function () {
         // when the parent LI is clicked, toggle a class on this dropdown UL
         navDropdown.classList.toggle("show"); // need to add CSS for this class to nav > ul > li > ul
+        dropContainer.classList.toggle('show');
         // OR
         // when the parent LI is clicked, toggle a class on the parent LI
         // this.classList.toggle("show"); // need to add CSS for this class to nav > ul > li > ul

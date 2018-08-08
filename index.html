@@ -18,9 +18,9 @@
 
 		<div class="hero homePage">
 
-			<nav>
+			<nav id = "topNav">
 				<ul> <!-- top level navigation list --> 
-					<li> <!--top level navigation item-->
+					<li class="dropContainer"> <!--top level navigation item-->
 						<a href="javascript:;">Give</a>
 						<ul class="dropdown-content"> <!-- second level navigation list -->
 							<li><a href="serve.html">Serve</a></li><!-- second level navigation item-->
@@ -33,7 +33,6 @@
 					<li><a href="javascript:;">Events</a></li><!-- top level naviation item -->
 				</ul>
 
-				<!-- that might be a UX problem. It's a really important button. revisit that later. -->
 				<a class="donate" href="donate.html">Donate</a>
 
 			</nav>
@@ -44,6 +43,8 @@
 			</div>
 
 		</div>
+
+		<a class="backToTop" href="#topNav"><em class="fas fa-angle-up"></em></a>
 
 
 		<section class="top">
@@ -318,6 +319,7 @@
 
 
 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
 
 		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 

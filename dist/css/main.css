@@ -138,6 +138,8 @@ body {
 }
 
 .hero.servePage .logoMark, .hero.storiesPage .logoMark, .hero.donatePage .logoMark {
+	position: relative;
+	z-index: 1001;
 	display: block;
 	width: 10%;
 	max-width: 85px;
@@ -162,7 +164,7 @@ body {
 	}
 }
 
-.hero.servePage .logoMark:hover, .hero.storiesPage .logoMark:hover, .hero.donatePage .logoMark:hover {
+.hero.servePage .logoMark img:hover, .hero.storiesPage .logoMark img:hover, .hero.donatePage .logoMark img:hover {
 	animation: wiggle 0.5s infinite;
 }
 
@@ -209,6 +211,8 @@ body {
 }
 
 .hero nav {
+	position: relative;
+	z-index: 1000;
 	display: flex;
 }
 
@@ -370,6 +374,26 @@ body {
 .hero nav .donate:hover {
 	background-color: black;
 	cursor: pointer;
+}
+
+.backToTop .fa, .backToTop .fas, .backToTop em {
+	height: 100px;
+	width: 100%;
+	font-weight: 900;
+	top: 52px;
+	position: absolute;
+	position: fixed;
+	color: transparent;
+	z-index: 4;
+	font-size: 36px;
+	left: 5%;
+	text-decoration: none;
+}
+
+.backToTop .fa::after, .backToTop .fas::after, .backToTop em::after {
+	content: 'top';
+	font-size: 0.4em;
+	display: block;
 }
 
 @keyframes wiggle {

@@ -63,7 +63,8 @@ body {
 		transition: .2s ease;
 
 		.logoMark{
-			
+			position: relative;
+			z-index: 1001;
 			@media screen and (max-width: 767px){
 				display: none;
 			}
@@ -79,11 +80,12 @@ body {
 				@media screen and (min-width: 1024px){
 					left: 45px;
 				}
+				&:hover{
+					animation: wiggle 0.5s infinite;
+				}
 			}
 
-			&:hover{
-				animation: wiggle 0.5s infinite;
-			}
+			
 		}
 		
 	}
@@ -129,6 +131,8 @@ body {
 	}
 
 	nav{
+		position: relative;
+		z-index: 1000;
 		display: flex;
 		
 		> ul{ // top level navigation list
@@ -163,6 +167,7 @@ body {
 				&:hover{
 					transform: translateY(-3px);
 					cursor: pointer;
+					
 				}
 
 				&:nth-child(3) a, &:last-child a{
@@ -177,10 +182,12 @@ body {
 				// and the UL appears, and you move the mouse to the UL, 
 				// you’re still technically hovering over the LI, since 
 				// the LI is inside the UL
-				&:hover {
+
+				&:hover{
 					> ul {
 						display: inline-block; // hover over parent item, show child list
 					}
+
 				}
 
 				> ul { // second level navigation list
@@ -254,6 +261,8 @@ body {
 						color: #6aab35;
 					}
 				}
+
+				
 			}
 
 			
@@ -287,6 +296,30 @@ body {
 		}
 	}
 }
+
+.backToTop{
+	.fa, .fas, em{
+		height: 100px;
+		width: 100%;
+		font-weight: 900;
+		top: 52px;
+		position: absolute;
+		position: fixed;
+		color: transparent;
+		z-index: 4;
+		font-size: 36px;
+		left: 5%;
+		text-decoration: none;
+		&::after{
+			content: 'top';
+			font-size: 0.4em;
+			display: block;
+		}
+		
+	}
+}
+
+
 
 
 // for logomark on hover --- see way above

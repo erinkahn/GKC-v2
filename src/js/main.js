@@ -4,7 +4,20 @@ to verify that you're working in the right files.`)
 
 
 
+// waypoints - back to top
 
+var waypoint = new Waypoint({
+    element: document.querySelector('.top, .serveSection'),
+    handler: function(direction) {
+      console.log('Scrolled to waypoint!')
+      if (direction == 'down'){
+        document.querySelector('.backToTop .fas').style.color = '#65aa05';
+      }
+      else {
+        document.querySelector('.backToTop .fas').style.color = 'transparent';
+      }
+    }
+})
 
 
 
@@ -73,6 +86,7 @@ $('ul.tabs li').last().addClass("tab_last");
 
 // find all the dropdowns (the second level nav ULs)
 let navDropdowns = document.querySelectorAll('nav > ul > li > ul');
+let dropContainer = document.querySelector('.dropContainer');
 
 // loop through them
 navDropdowns.forEach(function(navDropdown) {
@@ -81,6 +95,7 @@ navDropdowns.forEach(function(navDropdown) {
     navDropdown.parentNode.addEventListener("click", function() {
         // when the parent LI is clicked, toggle a class on this dropdown UL
         navDropdown.classList.toggle("show"); // need to add CSS for this class to nav > ul > li > ul
+        dropContainer.classList.toggle('show');
         // OR
         // when the parent LI is clicked, toggle a class on the parent LI
         // this.classList.toggle("show"); // need to add CSS for this class to nav > ul > li > ul
