@@ -619,6 +619,8 @@ body {
 	@media screen and (min-width: 900px){
 		padding-top: 30px;
 	}
+	
+	
 
 	h2{
 		padding-bottom: 20px;
@@ -635,8 +637,10 @@ body {
 		@media screen and (min-width: 900px){
 			flex-direction: row;
 			display: flex;
-			width: 93%;
+			width: 100%;
+			max-width: 500px;
 		}
+		
 		@media screen and (min-width: 1224px){
 			width: 83%;
 			max-width: 1290px;
@@ -1555,7 +1559,7 @@ footer{
 	width: 80%;
 	max-width: 455px;
 	@media screen and (min-width: 768px){
-		max-width: 755px;
+		width: 75%;
 		margin: 0% auto;
 	}
 	@media screen and (min-width: 1024px){
@@ -1649,6 +1653,12 @@ footer{
 
 	.waysServe{
 		color: #606060;
+		width: 100%;
+		min-width: 240px;
+		@media screen and (min-width: 1024px){
+			max-width: 900px;
+			margin: 0 auto;
+		}
 
 		//main section header
 		h2{
@@ -1656,6 +1666,7 @@ footer{
 			margin-top: 8%;
 			margin-bottom: 6%;
 			font-family: Georgia, 'Times New Roman', Times, serif;
+			white-space: nowrap;
 		}
 
 		h3{

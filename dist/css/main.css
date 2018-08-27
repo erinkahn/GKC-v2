@@ -776,7 +776,8 @@ body {
 	.waysToServe .serve {
 		flex-direction: row;
 		display: flex;
-		width: 93%;
+		width: 100%;
+		max-width: 500px;
 	}
 }
 
@@ -1841,7 +1842,7 @@ footer .footer-container .email a:hover {
 
 @media screen and (min-width: 768px) {
 	.serveSection {
-		max-width: 755px;
+		width: 75%;
 		margin: 0% auto;
 	}
 }
@@ -1967,6 +1968,15 @@ footer .footer-container .email a:hover {
 
 .serveSection .waysServe {
 	color: #606060;
+	width: 100%;
+	min-width: 240px;
+}
+
+@media screen and (min-width: 1024px) {
+	.serveSection .waysServe {
+		max-width: 900px;
+		margin: 0 auto;
+	}
 }
 
 .serveSection .waysServe h2 {
@@ -1974,6 +1984,7 @@ footer .footer-container .email a:hover {
 	margin-top: 8%;
 	margin-bottom: 6%;
 	font-family: Georgia, 'Times New Roman', Times, serif;
+	white-space: nowrap;
 }
 
 .serveSection .waysServe h3 {
