@@ -273,6 +273,18 @@ body {
 	position: absolute;
 }
 
+@media screen and (max-width: 767px) {
+	.hero nav > ul > li > ul {
+		left: 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.hero nav > ul > li > ul {
+		left: 0px;
+	}
+}
+
 .hero nav > ul > li > ul > li {
 	transition: .2s ease-in;
 	display: flex;

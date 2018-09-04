@@ -193,6 +193,16 @@ body {
 				> ul { // second level navigation list
 					display: none; // hidden by default
 					position: absolute;
+					@media screen and (max-width: 767px){
+						left: 0;
+						// -webkit-margin-top: 30px; /* Safari */
+					}
+					@media screen and (min-width: 768px){
+						left: 0px;
+						// -webkit-top: 30px; /* Safari */
+    					
+					}
+					
 
 					> li { // second level navigation items
 						transition: .2s ease-in;
